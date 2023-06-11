@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "title": "Can You Feel It?",
+            "section": "art",
+            "cover_image": "",
+            "images": [],
+            "video": [],
+            "url": "",
+            "description": "A VR music experience exploring space and light",
+            "type": ["art", "video", "vr"],
+            "roles": ["artist"],
+            "awards": []
+        }
+    ]
+}
