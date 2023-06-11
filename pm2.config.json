@@ -1,7 +1,7 @@
 {
   "name": "patrickgunderson.com",
   "script": "/var/www/patrickgunderson.com/src/js/server.js",
-  "instances": "max",
+  "instances": 1,
   "exec_mode": "cluster",
   "watch": true,
   "ignore_watch": ["node_modules", "built"],

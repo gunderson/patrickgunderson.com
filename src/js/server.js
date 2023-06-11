@@ -14,7 +14,10 @@ app.use(
 );
 
 app.use(express.static(__dirname + '/../../public'));
-app.use('/images', express.static(__dirname + '/../images'));
+app.use('/images', express.static(__dirname + '/../assets/images'));
+app.use('/fonts', express.static(__dirname + '/../assets/fonts'));
+app.use('/sounds', express.static(__dirname + '/../assets/sounds'));
+app.use('/css', express.static(__dirname + '/../../built/css'));
 
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/../pug');
