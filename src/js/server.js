@@ -8,6 +8,7 @@ app.use(
     src: __dirname + '/../sass',
     dest: __dirname + '/../../built/css',
     debug: true,
+    indentedSyntax : true,
     outputStyle: 'compressed',
     prefix: '/css'
   })
