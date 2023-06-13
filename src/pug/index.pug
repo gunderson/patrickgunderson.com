@@ -1,23 +1,16 @@
 doctype html
 html
-  head
-    title Patrick Gunderson
-    link(rel="stylesheet", href="css/style.css")
+  include _head
   body
-    div#header 
-      h1 Patrick Gunderson
-      ul.links
-        li Twitter 
-        li Instagram 
-        li Github 
-        li Codepen
+    include _header
     
     h2 Cool shit
     section.art
       a#art(name="art")
       h3 Art
       ul 
-        li loops 
+        li 
+          a(href="/loops") Loops 
         li Web 
         li Installations 
         li Prints 
@@ -83,6 +76,4 @@ html
         li 4x Clios
         li 3x Creativity A-list
     
-    div#footer
-      div.gunderson-gray "Gunderson Gray" is the color #333332 
-      div Version: #{version}
+    include _footer

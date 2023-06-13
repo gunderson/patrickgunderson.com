@@ -1,18 +1,88 @@
-$h1-color: #eee
+$h1-color: #ccc
 $h2-color: #ccc
 $primary-color: #aaa
-$gunderson-gray: #333332
+$highlight-color: #fff
+$gunderson-gray: #222221
 $a-color: #99aacc
+
+@import font-awesome
+@import font-face-mixin
+
+@include font-face(Tajawal, /fonts/Tajawal-Light, 300, normal, ttf)
+@include font-face(Tajawal, /fonts/Tajawal-Regular, 400, normal, ttf)
+@include font-face(Tajawal, /fonts/Tajawal-Medium, 500, normal, ttf)
+@include font-face(Tajawal, /fonts/Tajawal-Bold, 600, normal, ttf)
+
+
+html
+  min-height: 100vh
+  font-size: 1px
 
 body 
   background-color: $gunderson-gray
   margin: 0
-  padding: 20px
-  font-family: Arial, sans-serif
+  padding: 0
+  font-family: Tajawal
+  position: relative
+  min-height: 100vh
+  color: $primary-color
+  font-size: 16rem
 
 #header
-  background-color: #000
+  background-color: #222
+  padding: 20rem
+  position: relative
+  font-family: Tajawal
+  a, a:visited, a:active
+    color: $h1-color
+  a:hover
+    color: $highlight-color
 
+  h1
+    font-size: 30rem
+    font-weight: 300
+    margin: 0
+  ul
+    position: absolute
+    right: 0
+    top: 0
+    padding: 10rem
+
+  li
+    display: inline-block
+    padding: 0 10rem
+
+.media
+  text-align: center
+  position: relative
+  left: 0
+  right: 0
+  margin: 20rem
+
+  .meta
+    width: 1024rem
+    text-align: left
+    margin: auto
+    margin-top: 40rem
+    position: relative
+
+  .hero
+    width: 1024px
+    box-shadow: 0 0 16rem 0 rgba(0,0,0,0.64)
+
+  .title
+    .permanent-link, .external-link
+      margin-left: 8rem
+
+  .aux div
+    display: inline-block
+
+  .date
+
+  .description
+
+  .awards
+  
 h1 
   color: $h1-color
 
@@ -22,6 +92,24 @@ h2
 p, ul, li 
   color: $primary-color
 
+a, a:hover, a:active, a:visited
+  transition: color .2s ease-in-out;
+  text-decoration: none
+a
+  color: #7799cc
+a:hover, a:active:hover, a:visited:hover
+  color: #fff
+a:active
+  color: #9977cc
+a:visited
+  color: #9977cc
+  
+
 #footer
-  color: $gunderson-gray
-  background-color: $primary-color
+  color: $primary-color
+  background-color: #222
+  position: absolute
+  bottom: 0
+  width: 100vw
+  padding: 20rem
+  box-sizing: border-box

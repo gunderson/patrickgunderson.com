@@ -1,0 +1,28 @@
+doctype html
+html
+    include _head
+    body
+        include _header
+
+        .media
+            video.hero(controls="true" loop="true" autoplay="true")
+                source(src="videos/polar-opposites-complete-eachother.m4v" type="video/mp4")
+            .meta
+                .title Polar Opposites Complete Each Other
+                    a(href="https://patrickgunderson.com/loops/polar-opposites-complete-each-other").permanent-link
+                        .fa.fa-bookmark
+                    
+                    a(href="https://codepen.io").external-link
+                        
+                        .fa.fa-codepen
+                .aux
+                    .date
+                         
+                        span 2022
+
+                .description 
+                    | a well-written description
+                .awards
+        
+        
+        include _footer

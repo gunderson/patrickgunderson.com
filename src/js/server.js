@@ -9,13 +9,14 @@ app.use(
     dest: __dirname + '/../../built/css',
     debug: true,
     indentedSyntax : true,
-    outputStyle: 'compressed',
+    // outputStyle: 'compressed',
     prefix: '/css'
   })
 );
 
 app.use(express.static(__dirname + '/../../public'));
 app.use('/images', express.static(__dirname + '/../assets/images'));
+app.use('/videos', express.static(__dirname + '/../assets/videos'));
 app.use('/fonts', express.static(__dirname + '/../assets/fonts'));
 app.use('/sounds', express.static(__dirname + '/../assets/sounds'));
 app.use('/css', express.static(__dirname + '/../../built/css'));
@@ -30,6 +31,10 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+app.get('/:section', (req, res) => {
+  res.render(req.params.section);
 });
 
 app.post('/github-webhook', (req, res) => {
