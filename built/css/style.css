@@ -2066,9 +2066,23 @@ body {
   min-height: 100vh;
   color: #aaa;
   font-size: 16rem; }
+  body > .hero {
+    width: 100vw;
+    height: 75vh;
+    max-height: 1024rem;
+    position: relative;
+    background-image: url("/images/hero/composition-72.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center; }
+    body > .hero .shadow {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 30rem;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
 
 #header {
-  background-color: #222;
   padding: 20rem;
   position: relative;
   font-family: Tajawal; }
@@ -2078,7 +2092,7 @@ body {
     color: #fff; }
   #header h1 {
     font-size: 30rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0; }
   #header ul {
     position: absolute;
@@ -2094,26 +2108,37 @@ body {
   position: relative;
   left: 0;
   right: 0;
-  margin: 20rem; }
+  margin: 0rem; }
   .media .meta {
-    width: 1024rem;
+    max-width: 1024rem;
     text-align: left;
     margin: auto;
     margin-top: 40rem;
     position: relative; }
   .media .hero {
-    width: 1024px;
-    box-shadow: 0 0 16rem 0 rgba(0, 0, 0, 0.64); }
-  .media .title .permanent-link, .media .title .external-link {
-    margin-left: 8rem; }
-  .media .aux div {
-    display: inline-block; }
+    width: 100%; }
+    .media .hero video {
+      max-width: 1024rem; }
+  .media .title {
+    font-weight: 500;
+    color: #ccc;
+    font-size: 18rem; }
+    .media .title .permanent-link, .media .title .external-link {
+      margin-left: 8rem; }
+  .media .date {
+    font-weight: 400;
+    font-size: 16rem;
+    margin: 8rem; }
+  .media .medium {
+    margin-bottom: 10rem; }
 
 h1 {
-  color: #ccc; }
+  color: #ccc;
+  font-weight: 400; }
 
 h2 {
-  color: #ccc; }
+  color: #ccc;
+    color-font-weight: 400; }
 
 p, ul, li {
   color: #aaa; }

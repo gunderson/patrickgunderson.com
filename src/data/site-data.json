@@ -9,7 +9,7 @@
             "video": [],
             "url": "",
             "description": "A VR music experience exploring space and light",
-            "type": ["art", "video", "vr"],
+            "tags": ["art", "video", "vr"],
             "roles": ["artist"],
             "awards": []
         },
@@ -17,16 +17,18 @@
             "title": "Polar Opposites Complete Eachother",
             "slug": "polar-opposites-complete-eachother",
             "date": "2022",
+            "medium": "Seamless video loop",
             "section": "art",
             "cover_image": "/images/loops/polar-opposites-complete-eachother.png",
             "thumbnail": ["/images/loops/polar-opposites-complete-eachother-thumb.png"],
             "images": ["/images/loops/polar-opposites-complete-eachother.png"],
             "video": ["/videos/polar-opposites-complete-eachother.m4v"],
-            "url": "",
+            "external_url": "",
             "description": "A seamless loop",
-            "type": ["art", "video", "loop", "3d"],
+            "tags": ["art", "video", "loop", "3d"],
             "roles": ["artist"],
-            "awards": []
+            "awards": [],
+            "background_color": "#000"
         }
     ]
 }

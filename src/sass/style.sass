@@ -28,8 +28,25 @@ body
   color: $primary-color
   font-size: 16rem
 
+  &>.hero
+    width: 100vw
+    height: 75vh
+    max-height: 1024rem
+    position: relative
+    background-image: url("/images/hero/composition-72.jpg")
+    background-repeat: none
+    background-size: cover
+    background-position: center
+
+    .shadow
+      position: absolute
+      width: 100%
+      bottom: 0
+      height: 30rem
+      background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%)
+
 #header
-  background-color: #222
+  // background-color: #222
   padding: 20rem
   position: relative
   font-family: Tajawal
@@ -40,7 +57,7 @@ body
 
   h1
     font-size: 30rem
-    font-weight: 300
+    font-weight: 400
     margin: 0
   ul
     position: absolute
@@ -57,27 +74,35 @@ body
   position: relative
   left: 0
   right: 0
-  margin: 20rem
+  margin: 0rem
 
   .meta
-    width: 1024rem
+    // width: 1024rem
+    max-width: 1024rem
     text-align: left
     margin: auto
     margin-top: 40rem
     position: relative
 
   .hero
-    width: 1024px
-    box-shadow: 0 0 16rem 0 rgba(0,0,0,0.64)
+    width: 100%
+    video
+      max-width: 1024rem
 
   .title
+    font-weight: 500
+    color: $h1-color
+    font-size: 18rem
     .permanent-link, .external-link
       margin-left: 8rem
 
-  .aux div
-    display: inline-block
-
   .date
+    font-weight: 400
+    font-size: 16rem
+    margin: 8rem
+
+  .medium
+    margin-bottom: 10rem
 
   .description
 
@@ -85,9 +110,11 @@ body
   
 h1 
   color: $h1-color
+  font-weight: 400
 
 h2 
   color: $h2-color
+   font-weight: 400
 
 p, ul, li 
   color: $primary-color
