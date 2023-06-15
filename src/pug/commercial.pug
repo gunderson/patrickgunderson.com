@@ -6,17 +6,20 @@ html
 
         .media
             .hero(style="background-color:#111")
-                video(controls="true" loop="true" autoplay="true")
-                    source(src="videos/polar-opposites-complete-eachother.m4v" type="video/mp4")
+                iframe.youtube(
+                    src="https://www.youtube.com/embed/vxdJBAUULY0", 
+                    title="YouTube video player", frameborder="0", 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", 
+                    allowfullscreen=true)
             .meta
-                .title Polar Opposites Complete Each Other
-                    span.date 2022
+                .title US Open Sessions
+                    span.date #{date}
                     a(href="https://patrickgunderson.com/loops/polar-opposites-complete-each-other").permanent-link
                         .fa.fa-bookmark
                     
                     a(href="https://codepen.io").external-link
                         .fa.fa-codepen
-                .medium Seamless video loop, Three.js
+                .medium Generative Music, Web Technologies
                 .description 
                     | The "Lumigram Series" is a captivating collection of abstract artworks that explores the interplay of light and color. Through seamless video loops created with web technologies, vibrant hues blend and collide, creating mesmerizing compositions that engage and affect viewers at basal-sensory level.
                 .awards

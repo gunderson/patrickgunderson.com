@@ -1,7 +1,9 @@
 const express = require('express');
 const sassMiddleware = require('node-sass-middleware');
+const _ = require('lodash');
 const app = express();
 const port = process.env.PORT || 3000;
+const PATH = require("path");
 
 app.use(
   sassMiddleware({
@@ -15,6 +17,7 @@ app.use(
 );
 
 app.use(express.static(__dirname + '/../../public'));
+app.use('/js', express.static(__dirname));
 app.use('/images', express.static(__dirname + '/../assets/images'));
 app.use('/videos', express.static(__dirname + '/../assets/videos'));
 app.use('/fonts', express.static(__dirname + '/../assets/fonts'));
@@ -35,6 +38,20 @@ app.get('/', (req, res) => {
 
 app.get('/:section', (req, res) => {
   res.render(req.params.section);
+});
+
+app.get('/:section/:slug', (req, res) => {
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+
+  let data = _.find(siteData.projects, {slug: req.params.slug});
+  res.locals = _.extend(res.locals, data);
+  console.log(res.locals);
+
+  let template = data.template || req.params.section;
+
+  console.log('template', data.template, template)
+
+  res.render(template);
 });
 
 app.post('/github-webhook', (req, res) => {

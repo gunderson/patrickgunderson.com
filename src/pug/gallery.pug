@@ -1,0 +1,29 @@
+doctype html
+html
+    include _head
+    body
+        include _header
+
+        .media
+            .hero(style="background-color:" + background_color)
+                img.transition(src=images[0])
+                img.main(src=images[0])
+                .gallery 
+                    each imageurl, index in thumbnails
+                        img.thumbnail(src=imageurl data-full=images[index])
+            .meta
+                .title #{title}
+                    span.date #{date}
+                    a(href="https://patrickgunderson.com/" + section + "/" + slug).permanent-link
+                        .fa.fa-bookmark
+                    
+                    a(href="https://codepen.io").external-link
+                        .fa.fa-codepen
+                .medium #{medium}
+                .description #{description}
+                .awards
+        
+        
+        include _footer
+    script
+        include ../js/gallery.js
