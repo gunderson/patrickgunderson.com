@@ -1,0 +1,27 @@
+doctype html
+html
+    include _head
+    body
+        include _header
+
+        .media
+            .hero(style="background-color:"+backround_color)
+                iframe.youtube(
+                    title="vimeo-player",
+                    src="https://player.vimeo.com/video/" + video,
+                    frameborder="0",
+                    allowfullscreen=true)
+            .meta
+                .title #{title}
+                    span.date #{date}
+                    a(href="https://patrickgunderson.com/"+type+"/"+slug).permanent-link
+                        .fa.fa-bookmark
+                    -if (external_url)
+                        a(href=external_url).external-link
+                            .fa.fa-codepen
+                .medium #{medium}
+                .description #{description}
+                .awards
+        
+        
+        include _footer

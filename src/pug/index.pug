@@ -3,24 +3,26 @@ html
   include _head
   body  
     .hero
+      .bg
+      .bg-transition
+      
       include _header
-      .pull-quote Master oscillation 
+      .pull-quote Master oscillation and
         br
-        | and you can master the universe. 
+        | you will master the universe. 
       .shadow
 
     h2 Cool shit
     section.art
       a#art(name="art")
       h3 Art
-      ul 
-        li Loops
-          a(href="/loop/polar-opposites-complete-eachother") Polar Opposites Complete Each Other 
-        li Web 
-        li Installations 
-        li Prints
-          a(href="/gallery/composition-72") Composition #72
-        li VR 
+        h4 Loops
+        a(href="/loop/polar-opposites-complete-eachother") Polar Opposites Complete Each Other 
+        h4 Web 
+        h4 Installations 
+        h4 Prints
+        a(href="/gallery/composition-72") Composition #72
+        h4 VR 
         
     section.music
       a#music(name="music")
@@ -83,3 +85,5 @@ html
         li 3x Creativity A-list
     
     include _footer
+    script 
+      include ../js/hero-fade.js

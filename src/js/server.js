@@ -36,6 +36,31 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/list/:tags', (req, res) => {
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+  let tagArray = req.params.tags.split(",");
+  
+  tagArray = _.map(tagArray, tag => _.toLower(tag));
+
+  let projects = _.filter(siteData.projects, project => {
+    return _.intersection(project.tags, tagArray).length === tagArray.length;
+  });
+
+  tagArray = _.map(tagArray, tag => _.upperFirst(tag));
+  res.locals.tags = tagArray.join(", ")
+  res.locals.projects = projects;
+
+  res.render('list');
+});
+
+
+app.get('/data/:slug', (req, res) => {
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+  let data = _.find(siteData.projects, {slug: req.params.slug});
+  res.send(data);
+});
+
+
 app.get('/:section', (req, res) => {
   res.render(req.params.section);
 });
@@ -45,12 +70,7 @@ app.get('/:section/:slug', (req, res) => {
 
   let data = _.find(siteData.projects, {slug: req.params.slug});
   res.locals = _.extend(res.locals, data);
-  console.log(res.locals);
-
   let template = data.template || req.params.section;
-
-  console.log('template', data.template, template)
-
   res.render(template);
 });
 

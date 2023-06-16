@@ -1,0 +1,13 @@
+doctype html
+html
+    include _head
+    body
+        include _header
+        h1 Listing: #{tags}
+        ul.list
+            each project, index in projects
+                li 
+                    a(href=["",project.section,project.slug].join("/")) #{project.title}
+        
+        include _footer
+    script
