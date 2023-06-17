@@ -12,16 +12,22 @@ html
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", 
                     allowfullscreen=true)
             .meta
-                .title US Open Sessions
+                .title #{title}
                     span.date #{date}
-                    a(href="https://patrickgunderson.com/loops/polar-opposites-complete-each-other").permanent-link
+                    a(href="https://patrickgunderson.com/"+type+"/"+slug).permanent-link
                         .fa.fa-bookmark
-                    
-                    a(href="https://codepen.io").external-link
-                        .fa.fa-codepen
-                .medium Generative Music, Web Technologies
-                .description 
-                    | The "Lumigram Series" is a captivating collection of abstract artworks that explores the interplay of light and color. Through seamless video loops created with web technologies, vibrant hues blend and collide, creating mesmerizing compositions that engage and affect viewers at basal-sensory level.
+                    -if (external_url)
+                        a(href=external_url).external-link
+                            .fa.fa-codepen
+                .medium #{medium} 
+                    each role in roles
+                        span - #{role}
+                .description #{description}
+                .producers 
+                    h2 Produced by
+                    ul
+                    each producer in producers
+                        li #{producer}
                 .awards
         
         

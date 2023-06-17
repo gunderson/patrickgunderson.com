@@ -2,6 +2,7 @@ $h1-color: rgba(255,255,255,0.75)
 $h2-color: rgba(255,255,255,0.75)
 $primary-color: rgba(255,255,255,0.6)
 $highlight-color: rgba(255,255,255,1)
+$background-color: #111
 $gunderson-gray: #222221
 $a-color: #99aacc
 
@@ -19,7 +20,7 @@ html
   font-size: 1px
 
 body 
-  background-color: $gunderson-gray
+  background-color: $background-color
   margin: 0
   padding: 0
   font-family: Tajawal
@@ -33,6 +34,8 @@ body
     height: 75vh
     max-height: 1024rem
     position: relative
+    top: 0
+    margin-bottom: 100rem
     .bg, .bg-transition
       position: absolute
       background-image: url("/images/hero/composition-72.jpg")
@@ -66,10 +69,15 @@ body
   
 
 #header
-  // background-color: #222
   padding: 20rem
   position: relative
   font-family: Tajawal
+  width: 100vw
+  top: 0
+  // backdrop-filter: blur(7px)
+  // background-color: rgba(0,0,0,0.4)
+  // box-shadow: 0 0 30rem rgba(0,0,0,0.5)
+  z-index: 1000
   a, a:visited, a:active
     color: $h1-color
   a:hover
@@ -161,8 +169,15 @@ body
     margin-bottom: 10rem
 
   .description
-
+    // max-width: 768rem
   .awards
+    // max-width: 768rem
+  .producers
+    // max-width: 768rem
+    li
+      display: inline-block
+      margin-right: 20rem
+    
   
 h1 
   color: $h1-color
@@ -196,3 +211,69 @@ a:visited
   width: 100vw
   padding: 20rem
   box-sizing: border-box
+
+.home-page
+  section
+    position: relative
+    max-width: 1024rem
+    margin: auto
+    h3
+      top: -120rem
+      left: -40rem
+      position: absolute
+      font-size: 150rem
+      text-transform: uppercase
+      line-height: 0
+      letter-spacing: -10px
+      color: rgba(255,255,255,0.1)
+      font-weight: 700
+    h4
+      padding: 0
+      margin: 0
+    &.work
+      ul
+        position: relative
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: normal;
+        align-content: normal;
+        margin: 0
+        padding: 0
+      li
+        background-color: #000
+        width: 491rem
+        height: 200rem
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+        margin: 10rem
+        a
+          width: 100%
+          height: 100%
+          display: block 
+          background-size: contain
+          background-repeat: no-repeat
+          background-position: center
+          position: relative
+          border: 2rem solid black
+          box-sizing: border-box
+          h4
+            position: absolute
+            bottom: 0
+            padding: 10rem
+            color: rgba(255,255,255,0.5)
+            background-color: rgba(0,0,0,0.5)
+            width: 100%
+            font-weight: 400
+            box-sizing: border-box
+          &:hover
+            h4
+              color:#fff
+      &.cover a
+        background-size: cover
+            

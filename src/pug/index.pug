@@ -1,7 +1,7 @@
 doctype html
-html
+html.home-page
   include _head
-  body  
+  body
     .hero
       .bg
       .bg-transition
@@ -12,26 +12,30 @@ html
         | you will master the universe. 
       .shadow
 
-    h2 Cool shit
-    section.art
+    section.art.work
       a#art(name="art")
       h3 Art
-        h4 Loops
-        a(href="/loop/polar-opposites-complete-eachother") Polar Opposites Complete Each Other 
-        h4 Web 
-        h4 Installations 
-        h4 Prints
-        a(href="/gallery/composition-72") Composition #72
-        h4 VR 
+      h4 Loops
+      ul
+        li
+          a(href="/loop/polar-opposites-complete-eachother", style='background-color:#111;background-image:url("/images/loops/polar-opposites-complete-eachother.png")')
+            h4 Polar Opposites Complete Each Other
+      h4 Web 
+      h4 Installations 
+      h4 Prints
+      ul
+        li 
+          a(href="/gallery/composition-72") Composition #72
+      h4 VR 
         
-    section.music
+    section.music.work
       a#music(name="music")
       h3 Music
       ul 
         li Albums 
         li Soundcloud 
         li Experimental
-    section.commercial
+    section.commercial.work
       a#commercial(name="commercial")
       h3 Commercial 
       ul 

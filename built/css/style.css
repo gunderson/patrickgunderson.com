@@ -2058,7 +2058,7 @@ html {
   font-size: 1px; }
 
 body {
-  background-color: #222221;
+  background-color: #111;
   margin: 0;
   padding: 0;
   font-family: Tajawal;
@@ -2070,7 +2070,9 @@ body {
     width: 100vw;
     height: 75vh;
     max-height: 1024rem;
-    position: relative; }
+    position: relative;
+    top: 0;
+    margin-bottom: 100rem; }
     body > .hero .bg, body > .hero .bg-transition {
       position: absolute;
       background-image: url("/images/hero/composition-72.jpg");
@@ -2102,7 +2104,10 @@ body {
 #header {
   padding: 20rem;
   position: relative;
-  font-family: Tajawal; }
+  font-family: Tajawal;
+  width: 100vw;
+  top: 0;
+  z-index: 1000; }
   #header a, #header a:visited, #header a:active {
     color: rgba(255, 255, 255, 0.75); }
   #header a:hover {
@@ -2180,6 +2185,9 @@ body {
     margin: 8rem; }
   .media .medium {
     margin-bottom: 10rem; }
+  .media .producers li {
+    display: inline-block;
+    margin-right: 20rem; }
 
 h1 {
   color: rgba(255, 255, 255, 0.75);
@@ -2216,3 +2224,65 @@ a:visited {
   width: 100vw;
   padding: 20rem;
   box-sizing: border-box; }
+
+.home-page section {
+  position: relative;
+  max-width: 1024rem;
+  margin: auto; }
+  .home-page section h3 {
+    top: -120rem;
+    left: -40rem;
+    position: absolute;
+    font-size: 150rem;
+    text-transform: uppercase;
+    line-height: 0;
+    letter-spacing: -10px;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 700; }
+  .home-page section h4 {
+    padding: 0;
+    margin: 0; }
+  .home-page section.work ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: normal;
+    margin: 0;
+    padding: 0; }
+  .home-page section.work li {
+    background-color: #000;
+    width: 491rem;
+    height: 200rem;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 10rem; }
+    .home-page section.work li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      border: 2rem solid black;
+      box-sizing: border-box; }
+      .home-page section.work li a h4 {
+        position: absolute;
+        bottom: 0;
+        padding: 10rem;
+        color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        font-weight: 400;
+        box-sizing: border-box; }
+      .home-page section.work li a:hover h4 {
+        color: #fff; }
+  .home-page section.work.cover a {
+    background-size: cover; }
