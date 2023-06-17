@@ -2055,9 +2055,12 @@
 
 html {
   min-height: 100vh;
-  font-size: 1px; }
+  font-size: 1px;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 body {
+  height: 100%;
   background-color: #111;
   margin: 0;
   padding: 0;
@@ -2065,7 +2068,8 @@ body {
   position: relative;
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16rem; }
+  font-size: 16rem;
+  letter-spacing: -1rem; }
   body > .hero {
     width: 100vw;
     height: 75vh;
@@ -2085,6 +2089,7 @@ body {
     body > .hero .bg-transition {
       opacity: 0; }
     body > .hero .pull-quote {
+      display: inline-block;
       font-weight: 300;
       font-size: 50rem;
       margin: 20rem;
@@ -2102,7 +2107,6 @@ body {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
 
 #header {
-  padding: 20rem;
   position: relative;
   font-family: Tajawal;
   width: 100vw;
@@ -2113,9 +2117,11 @@ body {
   #header a:hover {
     color: white; }
   #header h1 {
+    padding: 20rem;
     font-size: 30rem;
     font-weight: 400;
-    margin: 0; }
+    margin: 0;
+    display: inline-block; }
   #header ul {
     position: absolute;
     right: 0;
@@ -2133,13 +2139,18 @@ body {
   margin: 0rem; }
   .media .hero {
     position: relative;
-    max-width: 100vw; }
+    max-width: 100vw;
+    height: 75vh;
+    max-height: 1024px; }
     .media .hero img {
       background-image: none;
-      max-width: 1024rem; }
+      max-width: 1024rem;
+      height: 100%;
+      width: auto; }
     .media .hero img.transition {
       position: absolute;
-      margin: auto; }
+      margin: auto;
+      height: 100%; }
     .media .hero .gallery {
       display: flex;
       flex-direction: row;
@@ -2165,29 +2176,40 @@ body {
     text-align: left;
     margin: auto;
     margin-top: 40rem;
+    padding-bottom: 120rem;
     position: relative; }
   .media .hero {
     width: 100%; }
     .media .hero video {
-      max-width: 1024rem; }
+      max-width: 1024rem;
+      height: 100%; }
     .media .hero .youtube {
       width: 100%;
       height: 60vh; }
   .media .title {
+    margin: 0 20rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.75);
     font-size: 18rem; }
     .media .title .permanent-link, .media .title .external-link {
       margin-left: 8rem; }
   .media .date {
+    margin: 0 20rem;
     font-weight: 400;
     font-size: 16rem;
     margin: 8rem; }
   .media .medium {
+    margin: 0 20rem;
     margin-bottom: 10rem; }
-  .media .producers li {
-    display: inline-block;
-    margin-right: 20rem; }
+  .media .description {
+    margin: 0 20rem; }
+  .media .awards {
+    margin: 0 20rem; }
+  .media .producers {
+    margin: 0 20rem; }
+    .media .producers li {
+      display: inline-block;
+      margin-right: 20rem; }
 
 h1 {
   color: rgba(255, 255, 255, 0.75);
