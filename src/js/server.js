@@ -33,6 +33,18 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
+  // develop home page data
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+  let projectData = _.mapValues(siteData.frontPage, section => {
+    return _.map(section, slug => {
+      return _.find(siteData.projects, {slug: slug});
+    });
+  });
+
+  res.locals = _.extend(res.locals, projectData);
+
+  console.log(res.locals.prints);
+
   res.render('index');
 });
 

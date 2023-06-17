@@ -8,9 +8,10 @@ html
             .hero(style="background-color:" + background_color)
                 img.transition(src=images[0])
                 img.main(src=images[0])
-                .gallery 
-                    each imageurl, index in thumbnails
-                        img.thumbnail(src=imageurl data-full=images[index])
+                .gallery
+                    if thumbnails.length > 1
+                        each imageurl, index in thumbnails
+                            img.thumbnail(src=imageurl data-full=images[index])
             .meta
                 .title #{title}
                     span.date #{date}

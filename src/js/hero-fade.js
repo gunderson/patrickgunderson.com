@@ -1,3 +1,10 @@
+let heroImageNodes = document.querySelectorAll(".hero .images img");
+let heroImages = []
+heroImageNodes.forEach(img => heroImages.push(img.src));
+
+console.log(heroImages)
+
+
 let images = [
     "/images/hero/composition-72.jpg",
     "/images/hero/ablaze-line.png",
@@ -26,7 +33,7 @@ function fadeUp(){
 }
 
 function completeTransition(){
-    console.log("completeTransition");
+    // console.log("completeTransition");
     frontLevel = 0;
     rearElement.style.backgroundImage = frontElement.style.backgroundImage;
     frontElement.style.opacity = 0;
@@ -34,13 +41,13 @@ function completeTransition(){
 }
 
 function startTransition(){
-    console.log("startTransition");
+    // console.log("startTransition");
 
     ++currentIndex;
-    if(currentIndex >= images.length){
+    if(currentIndex >= heroImages.length){
         currentIndex = 0;
     }
-    frontElement.style.backgroundImage = `url("${images[currentIndex]}")`;
+    frontElement.style.backgroundImage = `url("${heroImages[currentIndex]}")`;
     intervalAnimationId = setInterval(fadeUp, 16);
 }
 

@@ -4,6 +4,9 @@ html.home-page
   body
     .hero
       .bg
+        .images
+          each project in hero
+            img(src=project.cover_image)
       .bg-transition
       
       include _header
@@ -24,8 +27,10 @@ html.home-page
       h4 Installations 
       h4 Prints
       ul
-        li 
-          a(href="/gallery/composition-72") Composition #72
+        each project in prints
+          li 
+            a.fill(href="/gallery/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
       h4 VR 
         
     section.music.work
@@ -89,5 +94,6 @@ html.home-page
         li 3x Creativity A-list
     
     include _footer
+
     script 
       include ../js/hero-fade.js
