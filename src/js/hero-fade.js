@@ -36,7 +36,8 @@ function completeTransition(){
     // console.log("completeTransition");
     frontLevel = 0;
     rearElement.style.backgroundImage = frontElement.style.backgroundImage;
-    frontElement.style.opacity = 0;
+    // delay to fix flash between the switch
+    setTimeout(()=> {frontElement.style.opacity = 0;} , 100);
     clearInterval(intervalAnimationId);
 }
 

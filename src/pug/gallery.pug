@@ -12,6 +12,11 @@ html
                     if thumbnails.length > 1
                         each imageurl, index in thumbnails
                             img.thumbnail(src=imageurl data-full=images[index])
+                a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
+                    .fa.fa-chevron-right
+                a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
+                    .fa.fa-chevron-left
+
             .meta
                 .title #{title}
                     span.date #{date}

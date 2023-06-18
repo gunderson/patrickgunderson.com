@@ -48,21 +48,21 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/adjacent/:slug', (req, res) => {
+  res.send(getAdjacent(req.params.slug));
+});
+
 app.get('/list/:tags', (req, res) => {
-  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
-  let tagArray = req.params.tags.split(",");
-  
-  tagArray = _.map(tagArray, tag => _.toLower(tag));
-
-  let projects = _.filter(siteData.projects, project => {
-    return _.intersection(project.tags, tagArray).length === tagArray.length;
-  });
-
-  tagArray = _.map(tagArray, tag => _.upperFirst(tag));
-  res.locals.tags = tagArray.join(", ")
-  res.locals.projects = projects;
+  let dataList = getByTags(req.params.tags);
+  res.locals.tags = dataList.tags
+  res.locals.projects = dataList.projects;
 
   res.render('list');
+});
+
+app.get('/list-data/:tags', (req, res) => {
+  let dataList = getByTags(req.params.tags);
+  res.send(dataList);
 });
 
 
@@ -78,8 +78,10 @@ app.get('/:section', (req, res) => {
 });
 
 app.get('/:section/:slug', (req, res) => {
+  // TODO: validate section and slug
   let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
-
+  res.locals.adjacent = getAdjacent(req.params.slug);
+  console.log(res.locals.adjacent);
   let data = _.find(siteData.projects, {slug: req.params.slug});
   res.locals = _.extend(res.locals, data);
   let template = data.template || req.params.section;
@@ -133,3 +135,43 @@ app.post('/github-webhook', (req, res) => {
 app.listen(port, () => {
   console.log('Server is running on port ' + port);
 });
+
+
+function getAdjacent(slug){
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+
+  let projectData = siteData.projects;
+  let currentIndex = _.findIndex(projectData, {slug: slug});
+
+  let nextIndex = currentIndex + 1;
+  let prevIndex = currentIndex - 1;
+
+  if (nextIndex >= projectData.length){
+    nextIndex = 0;
+  }
+  if (prevIndex < 0){
+    prevIndex = projectData.length - 1;
+  }
+
+  return {
+    next: projectData[nextIndex],
+    prev: projectData[prevIndex]
+  }
+}
+
+function getByTags(tags){
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+  let tagArray = tags.split(",");
+  
+  tagArray = _.map(tagArray, tag => _.toLower(tag));
+
+  let projects = _.filter(siteData.projects, project => {
+    return _.intersection(project.tags, tagArray).length === tagArray.length;
+  });
+
+  tagArray = _.map(tagArray, tag => _.upperFirst(tag));
+  return {
+    tags: tagArray.join(", "),
+    projects:projects
+  };
+}

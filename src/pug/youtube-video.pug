@@ -11,10 +11,15 @@ html
                     title="YouTube video player", frameborder="0", 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", 
                     allowfullscreen=true)
+                
+                a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
+                    .fa.fa-chevron-right
+                a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
+                    .fa.fa-chevron-left
             .meta
                 .title #{title}
                     span.date #{date}
-                    a(href="https://patrickgunderson.com/"+type+"/"+slug).permanent-link
+                    a(href="https://patrickgunderson.com/"+section+"/"+slug).permanent-link
                         .fa.fa-bookmark
                     -if (external_url)
                         a(href=external_url).external-link
@@ -24,10 +29,10 @@ html
                         span - #{role}
                 .description #{description}
                 .producers 
-                    h2 Produced by
+                    h4 Produced by
                     ul
-                    each producer in producers
-                        li #{producer}
+                        each producer in producers
+                            li #{producer}
                 .awards
         
         

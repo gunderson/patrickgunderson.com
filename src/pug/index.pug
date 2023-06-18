@@ -10,9 +10,9 @@ html.home-page
       .bg-transition
       
       include _header
-      .pull-quote Master oscillation and
+      .pull-quote Oscillation is the 
         br
-        | you will master the universe. 
+        | key to the universe. 
       .shadow
 
     section.art.work
@@ -21,7 +21,7 @@ html.home-page
       h4 Loops
       ul
         li
-          a(href="/loop/polar-opposites-complete-eachother", style='background-color:#111;background-image:url("/images/loops/polar-opposites-complete-eachother.png")')
+          a(href="/art/polar-opposites-complete-eachother", style='background-color:#111;background-image:url("/images/loops/polar-opposites-complete-eachother.png")')
             h4 Polar Opposites Complete Each Other
       h4 Web 
       h4 Installations 
@@ -29,7 +29,7 @@ html.home-page
       ul
         each project in prints
           li 
-            a.fill(href="/gallery/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
       h4 VR 
         
