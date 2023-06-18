@@ -2,15 +2,22 @@
     "frontPage":{
         "hero":[
             "composition-72",
-            "composition-52",
+            "fallen-ring",
+            "us-open-sessions",
             "composition-69",
+            "ablaze",
+            "urchin",
             "millions-of-needles"
+
         ],
         "loops":[
-            "polar-opposites-complete-eachother"
+            "urchin",
+            "9-sprites",
+            "polar-opposites-complete-eachother",
+            "fallen-ring"
         ],
         "web":[
-
+            "ablaze"
         ],
         "installations":[
 
@@ -18,7 +25,6 @@
         "prints":[
             "composition-72",
             "composition-52",
-            "composition-69",
             "composition-68",
             "millions-of-needles"
         ],
@@ -56,9 +62,85 @@
 
         },
         {
+            "title": "Iris",
+            "slug": "iris",
+            "date": "2023",
+            "medium": "Seamless video loop",
+            "section": "art",
+            "template": "loop",
+            "series": "lumigrams",
+            "cover_image": "/images/iris/frame_000.png",
+            "thumbnails": ["/images/iris/frame_000.png"],
+            "images": ["/images/iris/frame_000.png"],
+            "video": ["/videos/iris.mp4"],
+            "external_url": "https://codepen.io/gunderson/pen/wvxPVzL",
+            "description": "A seamless loop",
+            "tags": ["generative","art", "video", "loop", "web"],
+            "roles": ["artist"],
+            "awards": [],
+            "background_color": "#000"
+        },
+        {
+            "title": "Urchin",
+            "slug": "urchin",
+            "date": "2023",
+            "medium": "Seamless video loop",
+            "section": "art",
+            "template": "loop",
+            "series": "lumigrams",
+            "cover_image": "/images/urchin/frame_000.png",
+            "thumbnails": ["/images/urchin/frame_000.png"],
+            "images": ["/images/urchin/frame_000.png"],
+            "video": ["/videos/urchin.mp4"],
+            "external_url": "https://codepen.io/gunderson/pen/NWOdbro",
+            "description": "A seamless loop",
+            "tags": ["generative","art", "video", "loop", "web"],
+            "roles": ["artist"],
+            "awards": [],
+            "background_color": "#222222"
+        },
+        {
+            "title": "Fallen Ring",
+            "slug": "fallen-ring",
+            "date": "2022",
+            "medium": "Seamless video loop",
+            "section": "art",
+            "template": "loop",
+            "series": "lumigrams",
+            "cover_image": "/images/fallen-ring/main.png",
+            "thumbnails": ["/images/fallen-ring/main.png"],
+            "images": ["/images/fallen-ring/main.png"],
+            "video": ["/videos/fallen-ring.mp4"],
+            "external_url": "https://codepen.io/gunderson/pen/poWegMW",
+            "description": "A seamless loop",
+            "tags": ["generative","art", "video", "loop", "web"],
+            "roles": ["artist"],
+            "awards": [],
+            "background_color": "#222222"
+        },
+        {
+            "title": "9 sprites",
+            "slug": "9-sprites",
+            "date": "2021",
+            "medium": "Seamless video loop",
+            "section": "art",
+            "template": "loop",
+            "series": "lumigrams",
+            "cover_image": "/images/9-sprites/9-sprites.png",
+            "thumbnails": ["/images/9-sprites/9-sprites.png"],
+            "images": ["/images/9-sprites/9-sprites.png"],
+            "video": ["/videos/9-sprites.mp4"],
+            "external_url": "https://codepen.io/gunderson/pen/QWqNBMp",
+            "description": "A seamless loop",
+            "tags": ["generative","art", "video", "loop", "web"],
+            "roles": ["artist"],
+            "awards": [],
+            "background_color": "#fff"
+        },
+        {
             "title": "Polar Opposites Complete Eachother",
             "slug": "polar-opposites-complete-eachother",
-            "date": "2022",
+            "date": "2021",
             "medium": "Seamless video loop",
             "section": "art",
             "template": "loop",
@@ -74,6 +156,28 @@
             "awards": [],
             "background_color": "#111"
         },{
+            "title": "Ablaze",
+            "slug": "ablaze",
+            "date": "2010",
+            "medium": "Web technologies",
+            "series": "web",
+            "section": "art",
+            "template": "gallery",
+            "cover_image": "/images/ablaze/ablaze-main.png",
+            "thumbnails": ["/images/ablaze/ablaze-main.png", "/images/ablaze/ablaze-line.png", "/images/ablaze/ablaze-rings.png"],
+            "images": ["/images/ablaze/ablaze-main.png", "/images/ablaze/ablaze-line.png", "/images/ablaze/ablaze-rings.png"],
+            "video": [],
+            "external_url": "http://theorigin.net/ablazejs",
+            "description": "A first departure from flash and an adoption of web technologies. Particles are strewn across a canvas and lines drawn between them as them move. Color samples are taken from a base image then drawn using a psudo-random line drawing algorithm in concert with a particle system. <p>The colors and shapes in this composition swirl around a an abstract space void of literal meaning.",
+            "tags": ["generative", "art", "web", "particles", "samples", "tool"],
+            "roles": ["artist"],
+            "awards": ["chrome-experiment"],
+            "background_color": "#000"
+        },
+        
+        
+        
+        {
             "title": "Composition #72",
             "slug": "composition-72",
             "date": "2009",
@@ -212,9 +316,9 @@
             "medium": "Generative music and visuals",
             "section": "commercial",
             "template": "youtube-video",
-            "cover_image": "/images/us-open-sessions/japes.poster.jpg",
-            "thumbnails": ["/images/us-open-sessions/japes.poster.jpg"],
-            "images": ["/images/us-open-sessions/japes.poster.jpg"],
+            "cover_image": "/images/us-open-sessions/james.poster.jpg",
+            "thumbnails": ["/images/us-open-sessions/james.poster.jpg"],
+            "images": ["/images/us-open-sessions/james.poster.jpg"],
             "video": ["vxdJBAUULY0"],
             "external_url": [
                 "http://www.rollingstone.com/music/premieres/hear-james-murphys-hypnotic-remix-of-a-tennis-match-20141218",

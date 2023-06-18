@@ -42,14 +42,19 @@ app.get('/', (req, res) => {
   });
 
   res.locals = _.extend(res.locals, projectData);
-
-  console.log(res.locals.prints);
-
   res.render('index');
 });
 
 app.get('/adjacent/:slug', (req, res) => {
   res.send(getAdjacent(req.params.slug));
+});
+
+app.get('/scroll/:tags', (req, res) => {
+  let dataList = getByTags(req.params.tags);
+  res.locals.tags = dataList.tags
+  res.locals.projects = dataList.projects;
+
+  res.render('scroll');
 });
 
 app.get('/list/:tags', (req, res) => {
@@ -81,7 +86,6 @@ app.get('/:section/:slug', (req, res) => {
   // TODO: validate section and slug
   let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
   res.locals.adjacent = getAdjacent(req.params.slug);
-  console.log(res.locals.adjacent);
   let data = _.find(siteData.projects, {slug: req.params.slug});
   res.locals = _.extend(res.locals, data);
   let template = data.template || req.params.section;
@@ -175,3 +179,4 @@ function getByTags(tags){
     projects:projects
   };
 }
+

@@ -1,7 +1,7 @@
 doctype html
-html.home-page
+html
   include _head
-  body
+  body.home-page
     .hero
       .bg
         .images
@@ -17,46 +17,73 @@ html.home-page
 
     section.art.work
       a#art(name="art")
-      h3 Art
+        h3 Art
       h4 Loops
       ul
-        li
-          a(href="/art/polar-opposites-complete-eachother", style='background-color:#111;background-image:url("/images/loops/polar-opposites-complete-eachother.png")')
-            h4 Polar Opposites Complete Each Other
+        each project in loops
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
+      a(href="/scroll/loop") More Loops
+
       h4 Web 
+      ul
+        each project in web
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
+      a(href="/scroll/web") More Web
       h4 Installations 
+      ul
+        each project in installations
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
+              
+      a(href="/scroll/installation") More Installations
       h4 Prints
       ul
         each project in prints
           li 
             a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
+      a(href="/scroll/installation") More Prints
       h4 VR 
-        
+      ul
+        each project in vr
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
     section.music.work
       a#music(name="music")
-      h3 Music
+        h3 Music
       ul 
         li Albums 
         li Soundcloud 
         li Experimental
     section.commercial.work
       a#commercial(name="commercial")
-      h3 Commercial 
-      ul 
-        li Google AR I/O
-        li Google AR UX
-        li US Open Sessions
-        li Sense8 Brainwave Symphony
-        li Project Hardin
-        li Land Rover Stories
-        li 30 Years of Mac
-        li JFK
-        li Gensler
-        li Passion Genome
-        li The Beauty Inside
-        li Infiniti Dream Road
-        li SuperBowl.com
+      h3 Commercial
+      
+      ul
+        each project in commercial
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
+      //- ul 
+      //-   li Google AR I/O
+      //-   li Google AR UX
+      //-   li US Open Sessions
+      //-   li Sense8 Brainwave Symphony
+      //-   li Project Hardin
+      //-   li Land Rover Stories
+      //-   li 30 Years of Mac
+      //-   li JFK
+      //-   li Gensler
+      //-   li Passion Genome
+      //-   li The Beauty Inside
+      //-   li Infiniti Dream Road
+      //-   li SuperBowl.com
 
     section.clients
       a#clients(name="clients")
