@@ -41,6 +41,7 @@
         "commercial":[
             "us-open-sessions",
             "the-beauty-inside",
+            "vanishing-game",
             "passion-genome",
             "ad-blitz"
         ]
@@ -62,6 +63,7 @@
             "tags": ["art", "video", "vr", "audio-viz"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#000"
 
         },
@@ -82,6 +84,7 @@
             "tags": ["generative","art", "video", "loop", "web"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#000"
         },
         {
@@ -101,6 +104,7 @@
             "tags": ["generative","art", "video", "loop", "web"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#222222"
         },
         {
@@ -120,6 +124,7 @@
             "tags": ["generative","art", "video", "loop", "web"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#222222"
         },
         {
@@ -139,6 +144,7 @@
             "tags": ["generative","art", "video", "loop", "web"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#fff"
         },
         {
@@ -158,6 +164,7 @@
             "tags": ["generative","art", "video", "loop", "3d"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "#111"
         },{
             "title": "Ablaze",
@@ -176,6 +183,7 @@
             "tags": ["generative", "art", "web", "particles", "samples", "generator"],
             "roles": ["artist"],
             "awards": ["chrome-experiment"],
+            "producers": [],
             "background_color": "#000"
         },
         {
@@ -195,11 +203,9 @@
             "tags": ["generative", "art", "web", "particles", "samples", "generator"],
             "roles": ["artist"],
             "awards": ["chrome-experiment"],
+            "producers": [],
             "background_color": "#000"
         },
-        
-        
-        
         {
             "title": "Composition #72",
             "slug": "composition-72",
@@ -217,6 +223,7 @@
             "tags": ["generative","art", "flash", "print", "painting", "ribbons"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },{
             "title": "Composition #69",
@@ -235,6 +242,7 @@
             "tags": ["generative","art", "flash", "print", "painting", "rings"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },{
             "title": "Composition #68",
@@ -253,6 +261,7 @@
             "tags": ["generative","art", "flash", "print", "painting", "rings"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },
         {
@@ -272,6 +281,7 @@
             "tags": ["generative","art", "flash", "print", "painting", "ribbons"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },
         {
@@ -291,6 +301,7 @@
             "tags": ["generative","art", "flash", "print", "painting"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },
         
@@ -311,6 +322,7 @@
             "tags": ["generative","art", "flash", "print", "data-viz"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },
         {
@@ -330,6 +342,7 @@
             "tags": ["generative","art", "flash", "painting", "portrait"],
             "roles": ["artist"],
             "awards": [],
+            "producers": [],
             "background_color": "transparent"
         },
         {
@@ -353,7 +366,26 @@
             "tags": ["generative","music", "video"],
             "roles": ["Creative Director", "Generative Composer"],
             "producers": ["IBM", "Ogilvy & Mather", "Tool of NA", "Plan8"],
-            "awards": ["cannes-lion", "d-and-ad", "one-show", "creative-sandbox", "fwa", "adobe"],
+            "awards": ["cannes-lion", "d-and-ad", "one-show", "creative-sandbox", "fwa", "adobe", "london-international", "mashie", "omma"],
+            "background_color": "#000"
+        },
+        {
+            "title": "Land Rover: The Vanishing Game",
+            "slug": "vanishing-game",
+            "date": "2015",
+            "medium": "Web technologies",
+            "section": "commercial",
+            "template": "vimeo-video",
+            "cover_image": "/images/vanishing-game/main.jpg",
+            "thumbnails": ["/images/vanishing-game/main.jpg","/images/vanishing-game/frame0.jpg","/images/vanishing-game/frame1.jpg","/images/vanishing-game/frame2.jpg"],
+            "images": ["/images/vanishing-game/main.jpg","/images/vanishing-game/frame0.jpg","/images/vanishing-game/frame1.jpg","/images/vanishing-game/frame2.jpg"],
+            "video": ["118937205"],
+            "external_url": "https://vimeo.com/118937205",
+            "description": "\"The Vanishing Game\" was interactive digital book written by best-selling novelist William Boyd and created by Y&R for Land Rover. This online thriller follows protagonist Alec Dunbar on a driving adventure from London to a remote part of Scotland. Readers are invited to fully experience the adventure via an innovative, multimedia platform at TheVanishingGame.com.",
+            "tags": ["commercial","social", "video", "story"],
+            "roles": ["Technical Director"],
+            "awards": ["fwa", "adobe", "communication-arts", "webby", "clio", "one-show", "omma", "adc"],
+            "producers": ["Land Rover", "Young & Rubicam", "Tool of NA"],
             "background_color": "#000"
         },
         {
@@ -366,8 +398,8 @@
             "cover_image": "/images/passion-genome/main.jpg",
             "thumbnails": ["/images/passion-genome/main.jpg", "/images/passion-genome/explore.jpg", "/images/passion-genome/portrait.jpg"],
             "images": ["/images/passion-genome/main.jpg", "/images/passion-genome/explore.jpg", "/images/passion-genome/portrait.jpg"],
-            "video": [],
-            "external_url": [],
+            "video": ["dYCEGF7fepQ"],
+            "external_url": ["https://www.youtube.com/watch?v=dYCEGF7fepQ"],
             "description": "The Passion Genome creates a personalized Passion Portrait that serves both as an interactive infographic and a piece of unique art that is driven by the essence of the user.",
             "tags": ["generative", "portrait", "interactive", "social", "web"],
             "roles": ["Creative Director", "Portrait Programmer"],
@@ -392,6 +424,25 @@
             "roles": ["Creative Developer"],
             "awards": ["emmy", "cannes-lion", "webby", "clio", "d-and-ad", "one-show"],
             "producers": ["Intel", "Toshiba", "B-Reel", "Pereira O'Dell"],
+            "background_color": "#000"
+        },
+        {
+            "title": "Infiniti Dream Road",
+            "slug": "dream-road",
+            "date": "2015",
+            "medium": "360 Video",
+            "section": "commercial",
+            "template": "vimeo-video",
+            "cover_image": "/images/ad-blitz/main.jpg",
+            "thumbnails": ["/images/ad-blitz/main.jpg"],
+            "images": ["/images/youtube-ad-blitz/main.jpg"],
+            "video": ["135821637"],
+            "external_url": "https://vimeo.com/64865152",
+            "description": "Traveling from Norway to the Italian Alps, then to Morocco and back again, “Dream Road” (which debuted at the Pebble Beach Concours d’Elegance) is a breathtaking virtual reality ride in the Infiniti Q60 Concept car. Covering close to 3,500 miles in the next gen coupe, the route in the film is impossible to recreate in a day, but the team behind the concept have made it an experience in which we can all partake. The film puts you in the driver’s seat, speeding between cliffs and through stunning valleys—thanks to 360° video playback on YouTube—you can even adjust your point of view to see the road reflected in your rear-view mirror or real time updates to the satnav. For those lucky enough to be at Pebble Beach this year, the experience is even more real through a state-of-the-art virtual reality demonstration at the Infiniti pavilion. Because Infiniti is more interested in the driver than the car, the film (which blends real world and CG elements to build an immersive VR experience) was truly created for potential drivers to feel and see what it’s going to be like to be behind the wheel of these concept vehicles.",
+            "tags": ["commercial","social", "video", "superbowl"],
+            "roles": ["Technical Director"],
+            "awards": [],
+            "producers": ["Infiniti", "CP+B", "Tool of NA", "BigLook360"],
             "background_color": "#000"
         },
         {

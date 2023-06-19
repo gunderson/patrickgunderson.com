@@ -144,6 +144,10 @@ body
     text-align: center
     .gallery-page &
       height: 100vw
+    .vimeo-page &
+      height: auto
+    .youtube-page &
+      height: auto
     
     .next, .prev
       position: absolute
@@ -246,11 +250,6 @@ body
   .description
     // max-width: 768rem
     margin: 0 20rem
-  .awards
-    // max-width: 768rem
-    margin: 0 20rem
-    text-align: center
-    opacity: .5
   .producers
     // max-width: 768rem
     margin: 0 20rem
@@ -262,7 +261,13 @@ body
       display: inline-block
       margin-right: 20rem
     
-  
+
+.awards
+  // max-width: 768rem
+  margin: 0 20rem
+  text-align: center
+  opacity: .5
+
 h1 
   color: $h1-color
   font-weight: 400
@@ -296,7 +301,7 @@ a:visited
 #footer
   color: $primary-color
   background-color: $gunderson-gray
-  position: absolute
+  position: relative
   bottom: 0
   width: 100%
   padding: 20rem
