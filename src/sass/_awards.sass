@@ -1,0 +1,74 @@
+$originalWidth: 1890px
+$scale: .5
+$scaledWidth: $originalWidth * $scale
+$gridSize: $scaledWidth / 9
+$gridSizePercentage: 100% / 8
+
+.award
+    display: inline-block
+    width: $gridSize
+    height: $gridSize
+    background-image: url("/images/awards-spritesheet-white.png")
+    background-repeat: no-repeat
+    background-size: $scaledWidth $scaledWidth
+    margin: 10rem
+    &.oscar
+        background-position-x: 1 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.d-and-ad
+        background-position-x: 2 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.advertising-age
+        background-position-x: 3 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.adc
+        background-position-x: 4 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.addy
+        background-position-x: 6 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.adobe
+        background-position-x: 7 * $gridSizePercentage
+        background-position-y: 0 * $gridSizePercentage
+    &.cannes-lion
+        background-position-x: 4 * $gridSizePercentage
+        background-position-y: 2 * $gridSizePercentage
+    &.clio
+        background-position-x: 6 * $gridSizePercentage
+        background-position-y: 2 * $gridSizePercentage
+    &.communication-arts
+        background-position-x: 7 * $gridSizePercentage
+        background-position-y: 2 * $gridSizePercentage
+    &.one-show
+        background-position-x: 8 * $gridSizePercentage
+        background-position-y: 2 * $gridSizePercentage
+    &.creativity
+        background-position-x: 0 * $gridSizePercentage
+        background-position-y: 3 * $gridSizePercentage
+    &.emmy
+        background-position-x: 4 * $gridSizePercentage
+        background-position-y: 3 * $gridSizePercentage
+    &.fitc
+        background-position-x: 4 * $gridSizePercentage
+        background-position-y: 7 * $gridSizePercentage
+    &.webby
+        background-position-x: 4 * $gridSizePercentage
+        background-position-y: 8 * $gridSizePercentage
+    &.fwa
+        background-position-x: 2 * $gridSizePercentage
+        background-position-y: 4 * $gridSizePercentage
+    &.london-international
+        background-position-x: 5 * $gridSizePercentage
+        background-position-y: 1 * $gridSizePercentage
+    &.mashie
+        background-position-x: 5 * $gridSizePercentage
+        background-position-y: 3 * $gridSizePercentage
+    &.sxsw
+        background-position-x: 7 * $gridSizePercentage
+        background-position-y: 5 * $gridSizePercentage
+    &.creative-sandbox
+        background-position-x: 1 * $gridSizePercentage
+        background-position-y: 8 * $gridSizePercentage
+    &.chrome-experiment
+        background-position-x: 2 * $gridSizePercentage
+        background-position-y: 8 * $gridSizePercentage

@@ -1,17 +1,12 @@
+// ------------------------------------------------------------------------
+// get a list of images that are defined in the HTML
+
 let heroImageNodes = document.querySelectorAll(".hero .images img");
 let heroImages = []
 heroImageNodes.forEach(img => heroImages.push(img.src));
 
-console.log(heroImages)
-
-
-let images = [
-    "/images/hero/composition-72.jpg",
-    "/images/hero/ablaze-line.png",
-    "/images/hero/ablaze-rings.png",
-    "/images/hero/composition-52.jpg",
-    "/images/hero/interference.jpg",
-]
+// ------------------------------------------------------------------------
+// fade loop
 
 let currentIndex = 0;
 
@@ -33,17 +28,14 @@ function fadeUp(){
 }
 
 function completeTransition(){
-    // console.log("completeTransition");
     frontLevel = 0;
     rearElement.style.backgroundImage = frontElement.style.backgroundImage;
-    // delay to fix flash between the switch
+    // delay hiding the element to fix flash between the image switch
     setTimeout(()=> {frontElement.style.opacity = 0;} , 100);
     clearInterval(intervalAnimationId);
 }
 
 function startTransition(){
-    // console.log("startTransition");
-
     ++currentIndex;
     if(currentIndex >= heroImages.length){
         currentIndex = 0;
@@ -52,4 +44,22 @@ function startTransition(){
     intervalAnimationId = setInterval(fadeUp, 16);
 }
 
-intervalLoopId = setInterval(startTransition, 8000);
+// ------------------------------------------------------------------------
+// control
+
+window.addEventListener("focus", startHeroCycle);
+window.addEventListener("blur", pauseHeroCycle);
+
+function startHeroCycle(){
+    if (intervalLoopId){
+        return;
+    }
+    intervalLoopId = setInterval(startTransition, 8000);
+}
+
+function pauseHeroCycle(){
+    clearInterval(intervalLoopId);
+    intervalLoopId = null;
+}
+
+startHeroCycle()

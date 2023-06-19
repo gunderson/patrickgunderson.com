@@ -25,8 +25,17 @@ html
                         a(href=external_url).external-link
                             .fa.fa-codepen
                 .medium #{medium}
-                .description #{description}
-                .awards
+                .description !{description}
+                .awards 
+                    each award in awards
+                        - var awardClass = "award " + award
+                        div(class=awardClass)
+        
+                .producers
+                    h4 Produced by
+                    ul
+                        each producer in producers
+                            li #{producer}
         
         
         include _footer

@@ -2029,6 +2029,75 @@
 .fa-fonticons:before {
   content: ""; }
 
+.award {
+  display: inline-block;
+  width: 105px;
+  height: 105px;
+  background-image: url("/images/awards-spritesheet-white.png");
+  background-repeat: no-repeat;
+  background-size: 945px 945px;
+  margin: 10rem; }
+  .award.oscar {
+    background-position-x: 12.5%;
+    background-position-y: 0%; }
+  .award.d-and-ad {
+    background-position-x: 25%;
+    background-position-y: 0%; }
+  .award.advertising-age {
+    background-position-x: 37.5%;
+    background-position-y: 0%; }
+  .award.adc {
+    background-position-x: 50%;
+    background-position-y: 0%; }
+  .award.addy {
+    background-position-x: 75%;
+    background-position-y: 0%; }
+  .award.adobe {
+    background-position-x: 87.5%;
+    background-position-y: 0%; }
+  .award.cannes-lion {
+    background-position-x: 50%;
+    background-position-y: 25%; }
+  .award.clio {
+    background-position-x: 75%;
+    background-position-y: 25%; }
+  .award.communication-arts {
+    background-position-x: 87.5%;
+    background-position-y: 25%; }
+  .award.one-show {
+    background-position-x: 100%;
+    background-position-y: 25%; }
+  .award.creativity {
+    background-position-x: 0%;
+    background-position-y: 37.5%; }
+  .award.emmy {
+    background-position-x: 50%;
+    background-position-y: 37.5%; }
+  .award.fitc {
+    background-position-x: 50%;
+    background-position-y: 87.5%; }
+  .award.webby {
+    background-position-x: 50%;
+    background-position-y: 100%; }
+  .award.fwa {
+    background-position-x: 25%;
+    background-position-y: 50%; }
+  .award.london-international {
+    background-position-x: 62.5%;
+    background-position-y: 12.5%; }
+  .award.mashie {
+    background-position-x: 62.5%;
+    background-position-y: 37.5%; }
+  .award.sxsw {
+    background-position-x: 87.5%;
+    background-position-y: 62.5%; }
+  .award.creative-sandbox {
+    background-position-x: 12.5%;
+    background-position-y: 100%; }
+  .award.chrome-experiment {
+    background-position-x: 25%;
+    background-position-y: 100%; }
+
 @font-face {
   font-family: "Tajawal";
   font-style: normal;
@@ -2250,7 +2319,9 @@ body {
   .media .description {
     margin: 0 20rem; }
   .media .awards {
-    margin: 0 20rem; }
+    margin: 0 20rem;
+    text-align: center;
+    opacity: .5; }
   .media .producers {
     margin: 0 20rem; }
     .media .producers ul {
@@ -2371,10 +2442,11 @@ a:visited {
         color: rgba(255, 255, 255, 0.5);
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
-        font-weight: 400;
+        font-weight: 300;
         box-sizing: border-box;
         opacity: 0;
-        transition: all .2s ease-in-out; }
+        transition: all .2s ease-in-out;
+        font-size: 18rem; }
       .home-page section.work li a:hover, .touch .home-page section.work li a {
         filter: grayscale(0.5);
         opacity: 1; }

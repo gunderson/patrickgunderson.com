@@ -1,7 +1,7 @@
 doctype html
 html
     include _head
-    body
+    body.youtube-page
         include _header
 
         .media
@@ -27,13 +27,17 @@ html
                 .medium #{medium} 
                     each role in roles
                         span - #{role}
-                .description #{description}
-                .producers 
+                .description !{description}
+                .awards 
+                    each award in awards
+                        - var awardClass = "award " + award
+                        div(class=awardClass)
+                
+                .producers
                     h4 Produced by
                     ul
                         each producer in producers
                             li #{producer}
-                .awards
         
         
         include _footer

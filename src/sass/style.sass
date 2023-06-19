@@ -9,6 +9,7 @@ $a-color: #99aacc
 @import font-awesome
 @import font-face-mixin
 @import mq-mixin
+@import awards
 
 @include font-face(Tajawal, /fonts/Tajawal-Light, 300, normal, ttf)
 @include font-face(Tajawal, /fonts/Tajawal-Regular, 400, normal, ttf)
@@ -248,6 +249,8 @@ body
   .awards
     // max-width: 768rem
     margin: 0 20rem
+    text-align: center
+    opacity: .5
   .producers
     // max-width: 768rem
     margin: 0 20rem
@@ -370,10 +373,11 @@ a:visited
             color: rgba(255,255,255,0.5)
             background-color: rgba(0,0,0,0.5)
             width: 100%
-            font-weight: 400
+            font-weight: 300
             box-sizing: border-box
             opacity: 0
             transition: all .2s ease-in-out;
+            font-size: 18rem
           &:hover, .touch &
             filter: grayscale(0.5)
             opacity: 1

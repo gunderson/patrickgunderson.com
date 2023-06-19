@@ -14,7 +14,6 @@ html
         br
         | key to the universe. 
       .shadow
-
     section.art.work
       a#art(name="art")
         h3 Art
@@ -26,28 +25,28 @@ html
               h4 #{project.title}
       a(href="/scroll/loop") More Loops
 
-      h4 Web 
+      h4 Generators
       ul
         each project in web
           li 
             a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
-      a(href="/scroll/web") More Web
-      h4 Installations 
+      a(href="/scroll/web") More Generators
+      h4 Physical 
       ul
-        each project in installations
+        each project in physical
           li 
             a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
               
-      a(href="/scroll/installation") More Installations
+      a(href="/scroll/physical") More Physical
       h4 Prints
       ul
         each project in prints
           li 
             a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
-      a(href="/scroll/installation") More Prints
+      a(href="/scroll/print") More Prints
       h4 VR 
       ul
         each project in vr
