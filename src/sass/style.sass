@@ -32,7 +32,7 @@ body
   position: relative
   min-height: 100vh
   color: $primary-color
-  font-size: 16rem
+  font-size: 20rem
   letter-spacing: -1rem
 
 
@@ -78,6 +78,23 @@ body
       filter: drop-shadow(0 0 5rem rgba(0,0,0,0.3))
       @include respond-to(phones)
         font-size: 30rem
+    .section-nav
+      margin: auto
+      position: absolute
+      height: 100rem
+      width: 48%
+      text-align: right
+      top: 0
+      bottom: 0
+      border-right: 2rem solid white
+      a
+        margin: -20rem 20rem
+        display: block
+        font-size: 50rem
+        font-weight: 500
+        color: $h1-color
+      a:hover
+        color: $highlight-color
       
 
     .shadow
@@ -106,7 +123,7 @@ body
 
   h1
     padding: 20rem 20rem 0rem 20rem
-    font-size: 30rem
+    font-size: 35rem
     font-weight: 400
     margin: 0
     
@@ -126,7 +143,8 @@ body
 
   li
     display: inline-block
-    padding: 0 10rem
+    padding: 0 15rem
+    font-size: 24rem
   
 
 .media
@@ -135,6 +153,7 @@ body
   left: 0
   right: 0
   margin: 0rem
+  font-size: 20rem
 
   .hero
     position: relative
@@ -143,7 +162,7 @@ body
     max-height: 1024px
     text-align: center
     .gallery-page &
-      height: 100vw
+      height: 60vw
     .vimeo-page &
       height: auto
     .youtube-page &
@@ -152,7 +171,7 @@ body
     .next, .prev
       position: absolute
       font-size: 50rem
-      color: rgba(255,255,255,0.6)
+      color: $h1-color
       line-height: 0
       top: 50%
       filter: drop-shadow(0 0 5rem rgba(0,0,0,0.3))
@@ -231,7 +250,7 @@ body
     margin: 0 20rem
     font-weight: 500
     color: $h1-color
-    font-size: 24rem
+    font-size: 28rem
     a
       font-size: 16rem
     .permanent-link, .external-link
@@ -240,12 +259,14 @@ body
   .date
     margin: 0 20rem
     font-weight: 400
-    font-size: 16rem
+    font-size: 18rem
     margin: 8rem
 
   .medium
     margin: 0 20rem
+    margin-top: -5rem
     margin-bottom: 10rem
+    font-size: 18rem
 
   .description
     // max-width: 768rem
@@ -315,12 +336,12 @@ a:visited
   section
     position: relative
     max-width: 1024rem
-    margin: auto
+    margin: 100rem auto
     & > a
       text-align: right
       display: block
       margin: 20rem
-    h3
+    h2
       top: -120rem
       left: -40rem
       position: absolute
@@ -333,6 +354,15 @@ a:visited
     h4
       padding: 0
       margin: 0
+    .clients
+      
+      margin: 0 20rem
+      text-align: center
+      opacity: .5
+      svg
+        width: 80rem
+        display: inline-block
+        margin: 20rem
     &.work
       ul
         position: relative

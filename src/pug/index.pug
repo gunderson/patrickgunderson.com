@@ -10,13 +10,17 @@ html
       .bg-transition
       
       include _header
+      .section-nav
+        a(href="#art") Art
+        a(href="#music") Music
+        a(href="#commercial")  Commercial
       .pull-quote Oscillation is the 
         br
         | key to the universe. 
       .shadow
     section.art.work
       a#art(name="art")
-        h3 Art
+        h2 Art
       h4 Loops
       ul
         each project in loops
@@ -55,14 +59,14 @@ html
               h4 #{project.title}
     section.music.work
       a#music(name="music")
-        h3 Music
+        h2 Music
       ul 
         li Albums 
         li Soundcloud 
         li Experimental
     section.commercial.work
       a#commercial(name="commercial")
-      h3 Commercial
+        h2 Commercial
       
       ul
         each project in commercial
@@ -86,25 +90,24 @@ html
 
     section.clients
       a#clients(name="clients")
-      h2 Clients
-      ul 
-        li Adidas
-        li Apple
-        li Google
-        li IBM
-        li Infiniti
-        li Instagram
-        li Intel
-        li JFK Library
-        li Netflix
-        li NFL
-        li Nissan
-        li Twitter
-        li YouTube
-    
+        h2 Clients
+      .clients 
+        include ../assets/images/clients/adidas.svg
+        include ../assets/images/clients/apple.svg
+        include ../assets/images/clients/google.svg
+        include ../assets/images/clients/ibm.svg
+        include ../assets/images/clients/intel.svg
+        include ../assets/images/clients/infiniti.svg
+        include ../assets/images/clients/jfk.svg
+        include ../assets/images/clients/netflix.svg
+        include ../assets/images/clients/nfl.svg
+        include ../assets/images/clients/nissan.svg
+        include ../assets/images/clients/twitter.svg
+        include ../assets/images/clients/youtube.svg
+      
     section.clients
       a#recognition(name="recognition")
-      h2 Recognition
+        h2 Recognition
       .awards
         .award.emmy
         .award.cannes-lion
@@ -121,19 +124,7 @@ html
         .award.creativity
         .award.creative-sandbox
         .award.chrome-experiment
-      //- ul 
-      //-   li 1x Daytime Emmy
-      //-   li 7x Cannes Lions
-      //-   li 4x D&AD
-      //-   li 15x FWA
-      //-   li 3x ACE
-      //-   li 1x Webby
-      //-   li 4x One Show
-      //-   li 1x Mashy
-      //-   li 1x SXSW Interactive
-      //-   li 3x Comm Arts Interactive
-      //-   li 4x Clios
-      //-   li 3x Creativity A-list
+
     
     include _footer
 

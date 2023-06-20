@@ -2100,6 +2100,9 @@
   .award.chrome-experiment {
     background-position-x: 25%;
     background-position-y: 100%; }
+  .award.omma {
+    background-position-x: 37.5%;
+    background-position-y: 100%; }
 
 @font-face {
   font-family: "Tajawal";
@@ -2139,7 +2142,7 @@ body {
   position: relative;
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16rem;
+  font-size: 20rem;
   letter-spacing: -1rem; }
   body > .hero {
     width: 100%;
@@ -2182,6 +2185,23 @@ body {
       @media screen and (min-width: 481px) and (max-width: 960px) {
         body > .hero .pull-quote {
           font-size: 30rem; } }
+    body > .hero .section-nav {
+      margin: auto;
+      position: absolute;
+      height: 100rem;
+      width: 48%;
+      text-align: right;
+      top: 0;
+      bottom: 0;
+      border-right: 2rem solid white; }
+      body > .hero .section-nav a {
+        margin: -20rem 20rem;
+        display: block;
+        font-size: 50rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.75); }
+      body > .hero .section-nav a:hover {
+        color: white; }
     body > .hero .shadow {
       position: absolute;
       width: 100%;
@@ -2202,7 +2222,7 @@ body {
     color: white; }
   #header h1 {
     padding: 20rem 20rem 0rem 20rem;
-    font-size: 30rem;
+    font-size: 35rem;
     font-weight: 400;
     margin: 0; }
   #header h2 {
@@ -2219,14 +2239,16 @@ body {
     padding: 10rem; }
   #header li {
     display: inline-block;
-    padding: 0 10rem; }
+    padding: 0 15rem;
+    font-size: 24rem; }
 
 .media {
   text-align: center;
   position: relative;
   left: 0;
   right: 0;
-  margin: 0rem; }
+  margin: 0rem;
+  font-size: 20rem; }
   .media .hero {
     position: relative;
     max-width: 100vw;
@@ -2234,7 +2256,7 @@ body {
     max-height: 1024px;
     text-align: center; }
     .gallery-page .media .hero {
-      height: 100vw; }
+      height: 60vw; }
     .vimeo-page .media .hero {
       height: auto; }
     .youtube-page .media .hero {
@@ -2242,7 +2264,7 @@ body {
     .media .hero .next, .media .hero .prev {
       position: absolute;
       font-size: 50rem;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.75);
       line-height: 0;
       top: 50%;
       filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.3)); }
@@ -2310,7 +2332,7 @@ body {
     margin: 0 20rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 24rem; }
+    font-size: 28rem; }
     .media .title a {
       font-size: 16rem; }
     .media .title .permanent-link, .media .title .external-link {
@@ -2318,11 +2340,13 @@ body {
   .media .date {
     margin: 0 20rem;
     font-weight: 400;
-    font-size: 16rem;
+    font-size: 18rem;
     margin: 8rem; }
   .media .medium {
     margin: 0 20rem;
-    margin-bottom: 10rem; }
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+    font-size: 18rem; }
   .media .description {
     margin: 0 20rem; }
   .media .producers {
@@ -2389,12 +2413,12 @@ a:visited {
 .home-page section {
   position: relative;
   max-width: 1024rem;
-  margin: auto; }
+  margin: 100rem auto; }
   .home-page section > a {
     text-align: right;
     display: block;
     margin: 20rem; }
-  .home-page section h3 {
+  .home-page section h2 {
     top: -120rem;
     left: -40rem;
     position: absolute;
@@ -2407,6 +2431,14 @@ a:visited {
   .home-page section h4 {
     padding: 0;
     margin: 0; }
+  .home-page section .clients {
+    margin: 0 20rem;
+    text-align: center;
+    opacity: .5; }
+    .home-page section .clients svg {
+      width: 80rem;
+      display: inline-block;
+      margin: 20rem; }
   .home-page section.work ul {
     position: relative;
     display: flex;
