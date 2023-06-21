@@ -2031,15 +2031,18 @@
 
 .award {
   display: inline-block;
-  width: 105px;
-  height: 105px;
+  width: 84px;
+  height: 84px;
   background-image: url("/images/awards-spritesheet-white.png");
   background-repeat: no-repeat;
-  background-size: 945px 945px;
+  background-size: 756px 756px;
   margin: 10rem; }
   .award.oscar {
     background-position-x: 12.5%;
     background-position-y: 0%; }
+  .award.awwward {
+    background-position-x: 0%;
+    background-position-y: 37.5%; }
   .award.d-and-ad {
     background-position-x: 25%;
     background-position-y: 0%; }
@@ -2086,8 +2089,8 @@
     background-position-x: 25%;
     background-position-y: 50%; }
   .award.london-international {
-    background-position-x: 62.5%;
-    background-position-y: 12.5%; }
+    background-position-x: 12.5%;
+    background-position-y: 62.5%; }
   .award.mashie {
     background-position-x: 37.5%;
     background-position-y: 62.5%; }
@@ -2500,6 +2503,14 @@ a:visited {
   max-width: 800rem;
   position: relative;
   margin: auto; }
+
+.scroll-page .main {
+  position: relative; }
+  .scroll-page .main video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .scroll-page .list {
   margin: 10rem;

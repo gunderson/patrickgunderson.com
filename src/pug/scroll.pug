@@ -8,13 +8,20 @@ html
             ul.list
                 each project, index in projects
                     li
-                        a(href=["",project.section,project.slug].join("/"))
-                            img.main(src=project.images[0])
-                            .meta
-                                .title #{project.title}
-                                    span.date #{project.date}
+                        if (project.template == "gallery")
+                            include _scroll-gallery
+                            
+                        if (project.template == "video")
+                            include _scroll-video
+                        //- a(href=["",project.section,project.slug].join("/"))
+                        //-     .main
+                        //-         img(src=project.images[0])
+                        //-     .meta
+                        //-         .title #{project.title}
+                        //-             span.date #{project.date}
 
                     
         
         include _footer
     script
+        include ../js/scroll-page.js

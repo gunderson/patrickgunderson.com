@@ -366,7 +366,7 @@
             "tags": ["generative","music", "video"],
             "roles": ["Creative Director", "Generative Composer"],
             "producers": ["IBM", "Ogilvy & Mather", "Tool of NA", "Plan8"],
-            "awards": ["cannes-lion", "d-and-ad", "one-show", "creative-sandbox", "fwa", "adobe", "london-international", "mashie", "omma"],
+            "awards": ["cannes-lion", "d-and-ad", "one-show", "creative-sandbox", "fwa", "adobe", "london-international", "mashie", "omma", "awwward"],
             "background_color": "#000"
         },
         {
@@ -384,7 +384,7 @@
             "description": "\"The Vanishing Game\" was interactive digital book written by best-selling novelist William Boyd and created by Y&R for Land Rover. This online thriller follows protagonist Alec Dunbar on a driving adventure from London to a remote part of Scotland. Readers are invited to fully experience the adventure via an innovative, multimedia platform at TheVanishingGame.com.",
             "tags": ["commercial","social", "video", "story"],
             "roles": ["Technical Director"],
-            "awards": ["fwa", "adobe", "communication-arts", "webby", "clio", "one-show", "omma", "adc"],
+            "awards": ["fwa", "adobe", "communication-arts", "webby", "clio", "one-show", "omma", "adc", "awwward"],
             "producers": ["Land Rover", "Young & Rubicam", "Tool of NA"],
             "background_color": "#000"
         },
@@ -394,17 +394,17 @@
             "date": "2014",
             "medium": "Web technologies",
             "section": "commercial",
-            "template": "gallery",
+            "template": "youtube-video",
             "cover_image": "/images/passion-genome/main.jpg",
             "thumbnails": ["/images/passion-genome/main.jpg", "/images/passion-genome/explore.jpg", "/images/passion-genome/portrait.jpg"],
             "images": ["/images/passion-genome/main.jpg", "/images/passion-genome/explore.jpg", "/images/passion-genome/portrait.jpg"],
-            "video": ["dYCEGF7fepQ"],
-            "external_url": ["https://www.youtube.com/watch?v=dYCEGF7fepQ"],
+            "video": ["3p6dirnuQbA"],
+            "external_url": ["https://www.youtube.com/watch?v=3p6dirnuQbA"],
             "description": "The Passion Genome creates a personalized Passion Portrait that serves both as an interactive infographic and a piece of unique art that is driven by the essence of the user.",
             "tags": ["generative", "portrait", "interactive", "social", "web"],
             "roles": ["Creative Director", "Portrait Programmer"],
             "producers": ["Nissan", "TBWA\\Chiat\\Day", "Tool of NA", "Plan8"],
-            "awards": ["fwa", "adobe"],
+            "awards": ["fwa", "adobe", "awwward"],
             "background_color": "#fff"
         },
         {
@@ -422,7 +422,7 @@
             "description": "<p>The Beauty Inside is the story of a guy named Alex who wakes up every day as a different person. He is always the same person on the inside but on the outside he is somebody else. When he meets Leah and falls in love everything changes for him. He knows he will see her again but she will never see him.</p><P>An ‘interactive social film’ with a story that unfolded on the film’s Facebook timeline in six episodes, starring Mary Elizabeth Winstead, Topher Grace and several fans who auditioned for a lead role on Facebook.</p>",
             "tags": ["commercial","social", "video","film", "social"],
             "roles": ["Creative Developer"],
-            "awards": ["emmy", "cannes-lion", "webby", "clio", "d-and-ad", "one-show"],
+            "awards": ["emmy", "cannes-lion", "webby", "clio", "d-and-ad", "one-show", "awwward"],
             "producers": ["Intel", "Toshiba", "B-Reel", "Pereira O'Dell"],
             "background_color": "#000"
         },
