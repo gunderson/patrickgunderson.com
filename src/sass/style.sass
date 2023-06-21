@@ -35,6 +35,9 @@ body
   font-size: 20rem
   letter-spacing: -1rem
 
+  a
+    transition: all .2s ease-in-out;
+
 
   &>.hero
     width: 100%
@@ -74,27 +77,30 @@ body
       bottom: 0
       left: 50%
       line-height: 70%
-      height: 100rem
+      height: 75rem
       filter: drop-shadow(0 0 5rem rgba(0,0,0,0.3))
       @include respond-to(phones)
         font-size: 30rem
     .section-nav
       margin: auto
       position: absolute
-      height: 100rem
+      height: 75rem
       width: 48%
       text-align: right
       top: 0
       bottom: 0
-      border-right: 2rem solid white
       a
-        margin: -20rem 20rem
+        margin: -20rem 0rem
+        padding: 0 20rem
         display: block
         font-size: 50rem
         font-weight: 500
         color: $h1-color
+        border-right: 2rem solid rgba(255,255,255,0);
       a:hover
         color: $highlight-color
+        border-right: 2rem solid white
+
       
 
     .shadow
@@ -126,6 +132,7 @@ body
     font-size: 35rem
     font-weight: 400
     margin: 0
+    color: inherit
     
   h2
     padding: 0 20rem
@@ -134,6 +141,7 @@ body
     margin: 0
     position: relative
     top: -8rem
+    color: inherit
     // text-align: center
   ul
     position: absolute
