@@ -1,7 +1,7 @@
 a(href=["",project.section,project.slug].join("/"))
     .main
         img(src=project.images[0])
-        video(data-source=project.video[0], autoplay=true, loop=true)
+        video(data-source=project.video[0], autoplay=true, loop=true, poster=project.images[0])
 
     .meta
         .title #{project.title}

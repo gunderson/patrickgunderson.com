@@ -14,9 +14,7 @@ html
         a(href="#art") Art
         a(href="#music") Music
         a(href="#client-work") Client Work
-      .pull-quote Oscillation is the 
-        br
-        | key to the universe. 
+      
       .shadow
     section.art.work
       a#art(name="art")
@@ -31,11 +29,11 @@ html
 
       h4 Generators
       ul
-        each project in web
+        each project in generator
           li 
             a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
-      a(href="/scroll/web") More Generators
+      a(href="/scroll/generator") More Generators
       h4 Physical 
       ul
         each project in physical
@@ -57,6 +55,7 @@ html
           li 
             a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
+      .pull-quote Oscillation is the key to the universe. 
     section.music.work
       a#music(name="music")
         h2 Music
@@ -67,7 +66,7 @@ html
     section.commercial.work
       a#commercial(name="client-work")
         h2 Client Work
-      
+      h4 Projects
       ul
         each project in commercial
           li 
@@ -88,9 +87,9 @@ html
       //-   li Infiniti Dream Road
       //-   li SuperBowl.com
 
-    section.clients
-      a#clients(name="clients")
-        h2 Project Clients
+    section.clients.work
+      h2 Clients
+      h4 &nbsp;
       .clients 
         include ../assets/images/clients/adidas.svg
         include ../assets/images/clients/apple.svg
@@ -115,10 +114,11 @@ html
         include ../assets/images/clients/heineken.svg
         include ../assets/images/clients/cac.svg
         include ../assets/images/clients/no-kid-hungry.svg
-      
-    section.clients
+    section.recognition 
       a#recognition(name="recognition")
         h2 Recognition
+      h4 &nbsp;
+
       .awards
         .award.emmy
         .award.cannes-lion
