@@ -2,17 +2,17 @@ doctype html
 html
     head
         include _head
-    body.vimeo-page
+    body.youtube-page
         include _header
 
         .media
             .hero(style="background-color:"+backround_color)
                 iframe.youtube(
-                    title="vimeo-player",
-                    src="https://player.vimeo.com/video/" + video,
-                    frameborder="0",
+                    src="https://www.youtube.com/embed/" + video, 
+                    title="YouTube video player", frameborder="0", 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", 
                     allowfullscreen=true)
-                                
+                
                 a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
                     .fa.fa-chevron-right
                 a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
@@ -25,13 +25,15 @@ html
                     -if (external_url)
                         a(href=external_url).external-link
                             .fa.fa-codepen
-                .medium #{medium}
+                .medium #{medium} 
+                    each role in roles
+                        span - #{role}
                 .description !{description}
                 .awards 
                     each award in awards
                         - var awardClass = "award " + award
                         div(class=awardClass)
-        
+                
                 .producers
                     h4 Produced by
                     ul

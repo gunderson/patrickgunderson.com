@@ -1,12 +1,16 @@
 doctype html
-html
-    include _head
+html.video-page
+    head
+        include _head
+        link(rel="stylesheet", href="/css/video-page.css")
     body
         include _header
         .media
             .hero(style="background-color:" + background_color)
-                video(controls="true" loop="true" autoplay="true")
+                video(loop="true" autoplay="true")
                     source(src=video[0] type="video/mp4")
+                .play-button-overlay
+                    .fa.fa-play
                 a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
                     .fa.fa-chevron-right
                 a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
@@ -27,3 +31,5 @@ html
         
         
         include _footer
+        script
+            include ../js/video-page.js
