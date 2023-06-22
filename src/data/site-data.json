@@ -14,6 +14,8 @@
             "urchin",
             "9-sprites",
             "polar-opposites-complete-eachother",
+            "diffracted",
+            "crystal",
             "fallen-ring"
         ],
         "generator":[
@@ -44,6 +46,7 @@
             "the-beauty-inside",
             "vanishing-game",
             "passion-genome",
+            "dream-road",
             "ad-blitz"
         ]
     },
@@ -146,31 +149,11 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#222"
+            "background_color": "transparent"
         },
         {
             "title": "Diffracted",
             "slug": "diffracted",
-            "date": "2021",
-            "medium": "Seamless video loop, Web Technologies",
-            "section": "art",
-            "template": "video",
-            "series": "lumigrams",
-            "cover_image": "/images/diffracted/main.jpg",
-            "thumbnails": ["/images/diffracted/main.jpg"],
-            "images": ["/images/diffracted/main.jpg"],
-            "video": ["/videos/diffracted.m4v"],
-            "external_url": "https://codepen.io/gunderson/pen/RwLGmrp",
-            "description": "The \"Lumigram Series\" is a captivating collection of abstract artworks that explores the interplay of light and color. Through seamless video loops created with web technologies, vibrant hues blend and collide, creating mesmerizing compositions that engage and affect viewers at basal-sensory level.",
-            "tags": ["generative","art", "video", "loop", "web"],
-            "roles": ["artist"],
-            "awards": [],
-            "producers": [],
-            "background_color": "#222"
-        },
-        {
-            "title": "Diffracted",
-            "slug": "Diffracted",
             "date": "2021",
             "medium": "Seamless video loop, Web Technologies",
             "section": "art",
@@ -533,9 +516,9 @@
             "medium": "360 Video",
             "section": "commercial",
             "template": "vimeo-video",
-            "cover_image": "/images/ad-blitz/main.jpg",
-            "thumbnails": ["/images/ad-blitz/main.jpg"],
-            "images": ["/images/youtube-ad-blitz/main.jpg"],
+            "cover_image": "/images/dream-road/dream-road.jpg",
+            "thumbnails": ["/images/dream-road/dream-road.jpg"],
+            "images": ["/images/dream-road/dream-road.jpg"],
             "video": ["211138917"],
             "external_url": "https://vimeo.com/211138917",
             "description": "Pebble Beach is the Westminster Dog Show of automotive events. At an event focused on the past, we looked to the future. So at the 2015 Pebble Beach Automotive Week, we created two immersive virtual reality experiences to create a loophole that put guests behind the wheel of the Q60 and the QX30 concept cars. It was the first time that 360 and VR were merged into one experience. The films could be experienced at home through both Google Cardboard-enhanced mobile app and the first ever YouTube 360 automotive ads, ensuring that viewers everywhere would be able to experience these cars the way they were meant to be experienced – from the driver’s seat.",
@@ -554,7 +537,7 @@
             "template": "youtube-video",
             "cover_image": "/images/ad-blitz/main.jpg",
             "thumbnails": ["/images/ad-blitz/main.jpg"],
-            "images": ["/images/youtube-ad-blitz/main.jpg"],
+            "images": ["/images/ad-blitz/main.jpg"],
             "video": ["GNNcyalmCN8"],
             "external_url": "https://youtu.be/GNNcyalmCN8",
             "description": "Assemble the Avengers team by unlocking and testing Avenger-inspired technology to outfit your Acura vehicle and advance in S.H.I.E.L.D. agent rank using your mobile device as your game controller.",
