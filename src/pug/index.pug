@@ -17,6 +17,7 @@ html
         a(href="#client-work") Client Work
       
       .shadow
+    //- .pull-quote "The origin" is an arbitrary, dimensionless point in space with no width, length, or height, from which we can reference all other points.
     section.art.work
       a#art(name="art")
         h2 Art
@@ -69,10 +70,12 @@ html
         h2 Client Work
       h4 Projects
       ul
-        each project in commercial
+        each project in locals["client-work"]
           li 
             a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
+      
+      a(href="/list/client-work") More Client Work
       //- ul 
       //-   li Google AR I/O
       //-   li Google AR UX
