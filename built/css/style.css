@@ -2247,18 +2247,17 @@ body {
     font-size: 24rem; }
 
 .media {
-  text-align: center;
   position: relative;
   left: 0;
   right: 0;
   margin: 0rem;
-  font-size: 20rem; }
+  font-size: 20rem;
+  padding-bottom: 120rem; }
   .media .hero {
     position: relative;
     max-width: 100vw;
     height: 75vh;
-    max-height: 1024px;
-    text-align: center; }
+    max-height: 1024px; }
     .gallery-page .media .hero {
       height: 60vw; }
     .vimeo-page .media .hero {
@@ -2321,7 +2320,6 @@ body {
     text-align: left;
     margin: auto;
     margin-top: 40rem;
-    padding-bottom: 120rem;
     position: relative; }
   .media .hero {
     width: 100%; }

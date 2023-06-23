@@ -1,30 +1,33 @@
 doctype html
-html
-    head
-        include _head
-    body
-        include _header
+html.album-page
+	head
+		include _head
+		link(rel="stylesheet", href="/css/album-page.css")
+	body
+		include _header
 
-        .media
-            .hero(style="background-color:" + background_color)
-                img.transition(src=images[0])
-                img.main(src=images[0])
-                .gallery 
-                    each imageurl, index in thumbnails
-                        img.thumbnail(src=imageurl data-full=images[index])
-            .meta
-                .title #{title}
-                    span.date #{date}
-                    a(href="https://patrickgunderson.com/" + section + "/" + slug).permanent-link
-                        .fa.fa-bookmark
-                    
-                    a(href="https://codepen.io").external-link
-                        .fa.fa-codepen
-                .medium #{medium}
-                .description #{description}
-                .awards
-        
-        
-        include _footer
-    script
-        include ../js/gallery.js
+		.media
+			.hero()
+				img.main(src=images[0])
+				
+				.meta
+					.title #{title}
+						span.date #{date}
+						a(href="https://patrickgunderson.com/" + section + "/" + slug).permanent-link
+							.fa.fa-bookmark
+						
+						a(href=external_url).external-link
+							.fa.fa-external-link
+				.medium #{medium}
+				.description #{description}
+				.awards
+		
+			.tracks
+				each file, name in tracks
+					h4 #{name}
+					audio(src=file, controls=true) 
+			
+		
+		include _footer
+	script
+		include ../js/album-page.js

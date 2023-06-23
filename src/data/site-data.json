@@ -35,8 +35,9 @@
         "vr":[
             "do-you-feel-it"
         ],
-        "albums":[
-
+        "music":[
+            "it-catches-you",
+            "generative-composition-1564-1"
         ],
         "experimental":[
 
@@ -406,6 +407,57 @@
             "tags": ["generative", "art", "web", "particles", "samples", "generator"],
             "roles": ["artist"],
             "awards": ["chrome-experiment"],
+            "producers": [],
+            "background_color": "#000"
+        },
+        {
+            "title": "(In the dark) It Catches You",
+            "slug": "it-catches-you",
+            "date": "2018",
+            "medium": "Music",
+            "series": "music",
+            "section": "music",
+            "template": "album",
+            "cover_image": "/images/albums/it-catches-you.jpg",
+            "thumbnails": ["/images/albums/it-catches-you.jpg"],
+            "images": ["/images/albums/it-catches-you.jpg"],
+            "video": [],
+            "tracks":{
+                "Contact": "/sounds/it-catches-you/contact.m4a",
+                "Working Hold": "/sounds/it-catches-you/working-hold.m4a",
+                "Borrowed Day": "/sounds/it-catches-you/borrowed-day.m4a",
+                "All Eyes": "/sounds/it-catches-you/all-eyes.m4a",
+                "In Blue": "/sounds/it-catches-you/in-blue.m4a",
+                "Natural Preparation": "/sounds/it-catches-you/natural-preparation.m4a",
+                "Aeroestrella": "/sounds/it-catches-you/aeroestrella.m4a",
+                "Senseless Circle": "/sounds/it-catches-you/senseless-circle.m4a",
+                "Redwood": "/sounds/it-catches-you/redwood.m4a"
+            },
+            "external_url": "",
+            "description": "",
+            "tags": ["music", "album"],
+            "roles": ["Composer"],
+            "awards": [],
+            "producers": [],
+            "background_color": "#000"
+        },
+        {
+            "title": "Generative Composition 1564 #1",
+            "slug": "generative-composition-1564-1",
+            "date": "2019",
+            "medium": "Generative, Max MSP",
+            "series": "music",
+            "section": "music",
+            "template": "youtube-video",
+            "cover_image": "/images/albums/generative-composition-1564-1.jpg",
+            "thumbnails": ["/images/albums/generative-composition-1564-1.jpg"],
+            "images": ["/images/albums/generative-composition-1564-1.jpg"],
+            "video": ["OlPM4QccHl8"],
+            "external_url": "https://youtu.be/OlPM4QccHl8",
+            "description": "An experiment in real-time generative composition.",
+            "tags": ["generative", "music","generator"],
+            "roles": ["artist"],
+            "awards": [],
             "producers": [],
             "background_color": "#000"
         },

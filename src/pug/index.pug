@@ -62,9 +62,10 @@ html
       a#music(name="music")
         h2 Music
       ul 
-        li Albums 
-        li Soundcloud 
-        li Experimental
+        each project in music
+          li 
+            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
     section.commercial.work
       a#commercial(name="client-work")
         h2 Client Work

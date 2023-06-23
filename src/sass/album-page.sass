@@ -1,0 +1,54 @@
+@import mq-mixin
+
+.album-page
+	text-align: left
+	.media
+		position: relative
+		margin: auto
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: normal;
+		align-content: normal;
+		max-width: 1024rem
+		left: 0
+		right: 0
+		
+		@include respond-to(phones)
+			display: block
+			margin: auto
+		.meta
+			padding: 0
+		.hero
+			width: 50%
+			height: auto
+			
+			@include respond-to(phones)
+				width: auto
+				max-width: 800rem
+				position: relative
+				margin: auto
+		img
+			width: 100%
+	.tracks
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		align-self: auto;
+		order: 0;
+		width: 50%
+		top: 0
+		right: 0
+		margin-left: 80rem
+		audio
+			filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(80%)
+			width: 400px
+			height: 25px
+		@include respond-to(phones)
+			display: block
+			margin: auto
+			width: 70%
+			audio
+				width: 100%

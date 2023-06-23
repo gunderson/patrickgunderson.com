@@ -73,6 +73,7 @@ overlayElements.forEach(overlayElement => {
 
 function onPlay(e) {
     e.currentTarget.parentElement.querySelector('.play-button-overlay').style.display = "none";
+    e.currentTarget.parentElement.querySelector('img').style.visibility = "hidden";
 }
 
 function onPause(e) {
