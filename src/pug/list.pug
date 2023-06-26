@@ -2,13 +2,17 @@ doctype html
 html
     head
         include _head
-    body
+        link(rel="stylesheet", href="/css/scroll-page.css")
+    body.home-page
         include _header
-        h1 Listing: #{tags}
-        ul.list
-            each project, index in projects
-                li 
-                    a(href=["",project.section,project.slug].join("/")) #{project.title}
+
+        section.work
+            h1 #{tags}
+            ul.list
+                each project, index in projects
+                    li 
+                        a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+                            h4 #{project.title}
         
         include _footer
     script
