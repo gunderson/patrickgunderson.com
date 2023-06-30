@@ -640,7 +640,7 @@
                 "https://www.fastcompany.com/3035202/the-sound-of-tennis-how-ibm-and-james-murphy-made-music-from-the-us-open#:~:text=IBM's%20U.S.%20Open%20Sessions%20is,by%20Tool%20of%20North%20America.",
                 "https://www.kexp.org/read/2014/12/24/album-review-james-murphy-remixes-made-with-tennis-data/"
             ],
-            "description": "<p>IBM’s U.S. Open Sessions is an experimental project that addresses that simple question: can you make music from tennis data? ?<p>IBM tracks all the data at the US Open, and we partnered with James Murphy (of LCD Soundsystem fame) to turn it into music. We created a custom-built algorithm to turn data points from more than 400 hours of tennis play into music cues, like pitch and tempo, that produced real-time soundtracks for each match. TRANSLATION: 187 different pieces of music wrote themselves in real time, as the matches happened.",
+            "description": "<p>IBM’s U.S. Open Sessions was an experimental project that addresses that simple question: can you make music from tennis data? ?<p>IBM tracks all the data at the US Open, and we partnered with James Murphy (of LCD Soundsystem fame) to turn it into music. We created a custom-built algorithm to turn data points from more than 400 hours of tennis play into music cues, like pitch and tempo, that produced real-time soundtracks for each match. TRANSLATION: 187 different pieces of music wrote themselves in real time, as the matches happened.",
             "tags": ["client-work","generative","music", "video"],
             "roles": ["Creative Director", "Generative Composer"],
             "producers": ["IBM", "Ogilvy & Mather", "Tool of NA", "Plan8"],

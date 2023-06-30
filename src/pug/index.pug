@@ -2,6 +2,7 @@ doctype html
 html
   head
     include _head
+    link(rel="stylesheet", href="/css/home-page.css")
   body.home-page
     .hero
       .bg
@@ -37,14 +38,14 @@ html
             a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
       a(href="/scroll/generator") More Generators
-      h4 Physical 
-      ul
-        each project in physical
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
+      //- h4 Physical 
+      //- ul
+      //-   each project in physical
+      //-     li 
+      //-       a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+      //-         h4 #{project.title}
               
-      a(href="/scroll/physical") More Physical
+      //- a(href="/scroll/physical") More Physical
       h4 Prints
       ul
         each project in prints
@@ -62,6 +63,7 @@ html
     section.music.work
       a#music(name="music")
         h2 Music
+      h4 &nbsp;
       ul 
         each project in music
           li 
@@ -95,6 +97,8 @@ html
     section.about.work
       a#about(name="about")
         h2 About
+      h4 &nbsp;
+      img(src="/images/patrick4.jpg").portrait
       p In the seedy underbelly of Las Vegas, amidst the blinding neon lights and the cacophony of slot machines, resides a man like no other. Patrick Gunderson, a true renegade of the artistic realm, defies categorization as a mere artist, designer, programmer, or director. No, my friend, Gunderson is a wild, untamed force that defies the constraints of conventional labels.
 
       p With a career spanning a quarter of a century, Gunderson's artistic escapades have rattled the very foundations of creative expression. His rebellious spirit, fueled by an insatiable hunger for pushing boundaries, has earned him a fearsome reputation and a cabinet overflowing with prestigious awards. Fortune 500 companies tremble at the mere mention of his name, eagerly seeking his radical touch to infuse their brands with a touch of genius.
