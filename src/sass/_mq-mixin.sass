@@ -14,21 +14,21 @@ $break-tvs: 1900px
 
 @mixin respond-to($media)
 	@if $media == small-phones
-		@media screen and (max-width: $break-small-phones)
+		@media (max-width: $break-small-phones)
 			@content
 
 	@else if $media == phones
-		@media screen and (min-width: $break-small-phones + 1) and (max-width: $break-tablets)
+		@media (min-width: $break-small-phones + 1) and (max-width: $break-tablets)
 			@content
 
 	@else if $media == tablets
-		@media screen and (min-width: $break-tablets + 1) and (max-width: $break-laptops)
+		@media (min-width: $break-tablets + 1) and (max-width: $break-laptops)
 			@content
 
 	@else if $media == laptops
-		@media screen and (min-width: $break-laptops) and (max-width: $break-tvs - 1)
+		@media (min-width: $break-laptops) and (max-width: $break-tvs - 1)
 			@content
 
 	@else if $media == tvs
-		@media screen and (min-width: $break-tvs)
+		@media (min-width: $break-tvs)
 			@content

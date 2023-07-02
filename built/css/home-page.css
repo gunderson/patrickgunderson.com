@@ -1,5 +1,19 @@
 .about .portrait {
   float: right;
   margin: 0 0 30rem 30rem;
-  width: 300rem;
+  width: 30%;
   opacity: 0.8; }
+  @media (max-width: 480px) {
+    .about .portrait {
+      margin: 0 20rem 20rem 20rem; } }
+  @media (min-width: 481px) and (max-width: 960px) {
+    .about .portrait {
+      margin: 0 20rem 20rem 20rem; } }
+
+@media (max-width: 480px) {
+  .about p {
+    margin: 0 20rem 20rem 20rem; } }
+
+@media (min-width: 481px) and (max-width: 960px) {
+  .about p {
+    margin: 20rem; } }

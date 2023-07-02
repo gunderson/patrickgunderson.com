@@ -1,6 +1,18 @@
+@import mq-mixin
+
 .about
-    .portrait
-        float: right
-        margin: 0 0 30rem 30rem
-        width: 300rem
-        opacity: 0.8
+	.portrait
+		float: right
+		margin: 0 0 30rem 30rem
+		width: 30%
+		opacity: 0.8
+		@include respond-to(small-phones)
+			margin: 0 20rem 20rem 20rem
+		@include respond-to(phones)
+			margin: 0 20rem 20rem 20rem
+	p
+		
+		@include respond-to(small-phones)
+			margin: 0 20rem 20rem 20rem
+		@include respond-to(phones)
+			margin: 20rem
