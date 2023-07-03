@@ -21,6 +21,7 @@ html
 	min-height: 100vh
 	font-size: 1px
 	box-sizing: border-box
+	scroll-behavior: smooth
 	// overflow-x: hidden
 	@include respond-to(small-phones)
 		font-size: 0.9px
@@ -75,12 +76,19 @@ body
 			margin: auto
 			position: absolute
 			height: 130rem
-			width: 1024rem
+			width: 80%
 			text-align: left
 			top: 0
 			bottom: 0
 			left: 20rem
-			// right: 0
+			box-sizing: border-box
+			
+			@include respond-to(small-phones)
+				left: 0rem
+				width: 100%
+			@include respond-to(phones)
+				left: 0rem
+				width: 100%
 			a
 				margin: -15rem 0rem
 				padding: 0 20rem
@@ -132,8 +140,11 @@ body
 	a, a:visited, a:active
 		display: inline-block
 		color: $h1-color
+		transform: translate3d(0,0,0)
 	a:hover
 		color: $highlight-color
+		// transform: scale(110%)
+		transition: all .2s ease-in-out;
 
 	h1
 		padding: 20rem 20rem 0rem 20rem
@@ -157,6 +168,7 @@ body
 		top: 0
 		padding: 10rem
 		text-align: center
+		box-sizing: border-box
 		
 		@include respond-to(small-phones)
 			left: 0
@@ -370,6 +382,7 @@ a:visited
 		max-width: 1024rem
 		position: relative
 		margin: auto
+	font-size: 12rem
 
 .home-page
 	section
@@ -422,12 +435,12 @@ a:visited
 		&.work
 			ul
 				position: relative
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-				align-items: normal;
-				align-content: normal;
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: flex-start
+				align-items: normal
+				align-content: normal
 				margin: 0
 				padding: 0
 				&.socials
@@ -439,6 +452,8 @@ a:visited
 					width: auto
 					height: auto
 					display: inline-block
+					&:hover a
+						// transform: scale(110%)
 				&.socials li a
 					
 					width: auto
@@ -459,7 +474,14 @@ a:visited
 				align-self: auto;
 				order: 0;
 				margin: 10rem
+
+				&:hover
+					a
+						background-size:  105% auto
+						transform: scale(105%)
 				
+				@include respond-to(small-phones)
+					width: 100%
 				@include respond-to(phones)
 					width: 100%
 
@@ -467,7 +489,7 @@ a:visited
 					width: 100%
 					height: 100%
 					display: block 
-					background-size: contain
+					background-size:  100% auto
 					background-repeat: no-repeat
 					background-position: center
 					position: relative
@@ -477,9 +499,6 @@ a:visited
 					opacity: 0.7
 					transition: all .2s ease-in-out;
 					
-
-					&.fill
-						background-size: cover
 					h4
 						position: absolute
 						bottom: 0
@@ -501,4 +520,35 @@ a:visited
 
 			&.cover a
 				background-size: cover
-.scroll-page
+
+ul.socials
+	position: relative
+	margin: 0
+	padding: 0
+	display: block
+	width: 100%
+	text-align: center
+	li
+		background: transparent
+		width: auto
+		height: auto
+		display: inline-block
+		&:hover a
+			transform: scale(120%)
+	li a
+		width: auto
+		height: auto
+		display: inline-block
+		padding: 0 15rem
+		font-size: 24rem
+		border: none
+		filter: none
+		color: $highlight-color
+		opacity: 0.7
+		transition: all .2s ease-in-out;
+
+		&:hover
+			opacity: 1
+	
+	
+	.scroll-page

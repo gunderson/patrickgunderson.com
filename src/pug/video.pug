@@ -20,8 +20,9 @@ html.video-page
                     span.date #{date}
                     a(href="https://patrickgunderson.com/" + section + "/" + slug).permanent-link
                         .fa.fa-bookmark
-                    
                     a(href=external_url).external-link
+                        -if (external_url.includes("codepen"))
+                            | See the code 
                         .fa.fa-external-link
                 .medium #{medium}
                 .description #{description}

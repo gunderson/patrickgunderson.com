@@ -110,7 +110,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#222222"
+            "background_color": "transparent"
         },
         {
             "title": "Urchin",
@@ -130,7 +130,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#222222"
+            "background_color": "#222"
         },
         {
             "title": "See Through Me",
@@ -150,7 +150,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#000"
+            "background_color": "transparent"
         },
         {
             "title": "Fallen Ring",
@@ -170,7 +170,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#222222"
+            "background_color": "#222"
         },
         {
             "title": "Labyrinth",
@@ -190,7 +190,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "transparent"
+            "background_color": "#000"
         },
         {
             "title": "Where Is The End",
@@ -230,7 +230,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "We Move Together",
@@ -250,7 +250,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "Stars Don't Always Twinkle",
@@ -270,7 +270,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "Unstable",
@@ -290,7 +290,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "Gravitation",
@@ -310,7 +310,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "Decay",
@@ -330,7 +330,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#111"
+            "background_color": "#222"
         },
         {
             "title": "Orthogonal Saturation",
@@ -390,7 +390,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#222"
+            "background_color": "transparent"
         },
         {
             "title": "Diffracted",
@@ -430,7 +430,7 @@
             "roles": ["artist"],
             "awards": [],
             "producers": [],
-            "background_color": "#000"
+            "background_color": "transparent"
         },
         {
             "title": "Remain Focused",
