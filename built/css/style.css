@@ -2203,8 +2203,8 @@ body {
             margin: -20rem 0rem; } }
         @media (min-width: 481px) and (max-width: 960px) {
           body > .hero .section-nav a {
-            font-size: 70rem;
-            margin: -10rem 0rem; } }
+            font-size: 60rem;
+            margin: -20rem 0rem; } }
       body > .hero .section-nav a:hover {
         color: white;
         border-left: 2rem solid white; }
