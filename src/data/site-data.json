@@ -16,7 +16,7 @@
             "polar-opposites-complete-eachother",
             "diffracted",
             "crystal",
-            "fallen-ring"
+            "gravitation"
         ],
         "generator":[
             "ablaze",
@@ -36,6 +36,7 @@
             "do-you-feel-it"
         ],
         "music":[
+            "deschutes",
             "it-catches-you",
             "generative-composition-1564-1"
         ],
@@ -1491,6 +1492,33 @@
             "tags": ["generative", "art", "web", "particles", "samples", "generator"],
             "roles": ["artist"],
             "awards": ["chrome-experiment"],
+            "producers": [],
+            "background_color": "#000"
+        },
+        {
+            "title": "Deschutes",
+            "slug": "deschutes",
+            "date": "2021",
+            "medium": "Music",
+            "series": "music",
+            "section": "music",
+            "template": "album",
+            "cover_image": "/images/albums/deschutes.png",
+            "thumbnails": ["/images/albums/deschutes.png"],
+            "images": ["/images/albums/deschutes.png"],
+            "video": [],
+            "tracks":{
+                "Corporate Backing": "/sounds/deschutes/corporate-backing.m4a",
+                "Formal Movement": "/sounds/deschutes/formal-movement.m4a",
+                "Flat Order": "/sounds/deschutes/flat-order.m4a",
+                "Solitary Knot": "/sounds/deschutes/solitary-knot.m4a",
+                "Deschutes": "/sounds/deschutes/deschutes.m4a"
+            },
+            "external_url": "",
+            "description": "",
+            "tags": ["music", "album"],
+            "roles": ["Composer"],
+            "awards": [],
             "producers": [],
             "background_color": "#000"
         },

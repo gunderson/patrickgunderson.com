@@ -62,3 +62,6 @@
         .album-page .tracks ol li.playing {
           color: #f00;
           opacity: 1; }
+        .album-page .tracks ol li:hover {
+          color: #fff;
+          opacity: 1; }

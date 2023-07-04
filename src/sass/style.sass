@@ -138,7 +138,6 @@ body
 	// box-shadow: 0 0 30rem rgba(0,0,0,0.5)
 	z-index: 1000
 	a, a:visited, a:active
-		display: inline-block
 		color: $h1-color
 		transform: translate3d(0,0,0)
 	a:hover
@@ -169,6 +168,9 @@ body
 		padding: 10rem
 		text-align: center
 		box-sizing: border-box
+		display: none
+		.home-page &
+			display: block
 		
 		@include respond-to(small-phones)
 			left: 0
