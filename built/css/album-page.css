@@ -12,7 +12,7 @@
     max-width: 1024rem;
     left: 0;
     right: 0; }
-    @media screen and (min-width: 481px) and (max-width: 960px) {
+    @media (min-width: 481px) and (max-width: 960px) {
       .album-page .media {
         display: block;
         margin: auto; } }
@@ -21,7 +21,7 @@
     .album-page .media .hero {
       width: 50%;
       height: auto; }
-      @media screen and (min-width: 481px) and (max-width: 960px) {
+      @media (min-width: 481px) and (max-width: 960px) {
         .album-page .media .hero {
           width: auto;
           max-width: 800rem;
@@ -29,6 +29,14 @@
           margin: auto; } }
     .album-page .media img {
       width: 100%; }
+    .album-page .media audio {
+      filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(80%);
+      width: 80%;
+      height: 25px;
+      position: relative;
+      margin: auto;
+      left: 10%;
+      right: 0; }
   .album-page .tracks {
     display: block;
     flex-grow: 0;
@@ -40,14 +48,17 @@
     top: 0;
     right: 0;
     margin-left: 80rem; }
-    .album-page .tracks audio {
-      filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(80%);
-      width: 400px;
-      height: 25px; }
-    @media screen and (min-width: 481px) and (max-width: 960px) {
+    @media (min-width: 481px) and (max-width: 960px) {
       .album-page .tracks {
         display: block;
         margin: auto;
-        width: 70%; }
-        .album-page .tracks audio {
-          width: 100%; } }
+        width: 70%; } }
+    .album-page .tracks ol {
+      margin: 0 20rem;
+      padding: 0; }
+      .album-page .tracks ol li {
+        cursor: pointer;
+        padding: 5rem 0; }
+        .album-page .tracks ol li.playing {
+          color: #f00;
+          opacity: 1; }

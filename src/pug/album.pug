@@ -7,7 +7,7 @@ html.album-page
 		include _header
 
 		.media
-			.hero()
+			.hero
 				img.main(src=images[0])
 				
 				.meta
@@ -16,16 +16,18 @@ html.album-page
 						a(href="https://patrickgunderson.com/" + section + "/" + slug).permanent-link
 							.fa.fa-bookmark
 						
-						a(href=external_url).external-link
-							.fa.fa-external-link
+						//- a(href=external_url).external-link
+						//- 	.fa.fa-external-link
 				.medium #{medium}
+				audio.player(controls=true)
 				.description #{description}
 				.awards
-		
 			.tracks
-				each file, name in tracks
-					h4 #{name}
-					audio(src=file, controls=true) 
+				h4 Tracks
+				ol(type=1)
+					each file, name in tracks
+						li(data-src=file) #{name}
+						//audio(src=file, controls=true) 
 			
 		
 		include _footer

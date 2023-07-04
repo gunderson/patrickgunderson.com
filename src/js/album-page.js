@@ -1,31 +1,59 @@
-let audioElements = document.querySelectorAll('audio');
+let audioPlayer = document.querySelector('audio');
+let tracks = document.querySelectorAll('.tracks li')
 
-audioElements.forEach(el => {
-    el.addEventListener('play', onPlay);
-    el.addEventListener('ended', onComplete);
+audioPlayer.addEventListener('play', onPlay);
+audioPlayer.addEventListener('pause', onPlay);
+audioPlayer.addEventListener('ended', onComplete);
+
+tracks.forEach(el => {
+    el.addEventListener('click', onTrackClick);
 });
+
+audioPlayer.src = tracks[0].dataset.src;
+let currentTrack = tracks[0];
+
+function onTrackClick(event){
+    loadTrack(event.target);
+}
+
+function loadTrack(el) {
+    let src = el.dataset.src;
+    audioPlayer.src = src;
+    currentTrack = el
+    audioPlayer.play();
+}
 
 function onComplete(event){
     // play next
     let next = null;
-    audioElements.forEach((el, index) => {
-        if(el === event.currentTarget){
-            if (index < audioElements.length - 1){
-                next = audioElements[index + 1];
-                next.play();
+    let done = false;
+    tracks.forEach((el, index) => {
+        if (done) return;
+        if(audioPlayer.src.includes(el.dataset.src)){
+            if (index < tracks.length - 1){
+                next = tracks[index + 1];
+                loadTrack(next);
+                done = true;
+            } else {
+                markPlaying(null)
             }
         }
     });
 }
 
 function onPlay(event){
-    pauseOthers(event.currentTarget);
+    markPlaying(currentTrack);
+}
+function onPause(event){
+    // markPlaying(null);
 }
 
-function pauseOthers(playingElement){
-    audioElements.forEach(el => {
-        if (el != playingElement){
-            el.pause();
+function markPlaying(currentTrack){
+    tracks.forEach(el => {
+        if (el != currentTrack){
+            el.classList.remove("playing");
+        } else {
+            el.classList.add("playing");
         }
     });
 }

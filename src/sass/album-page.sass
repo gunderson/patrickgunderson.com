@@ -31,6 +31,15 @@
 				margin: auto
 		img
 			width: 100%
+	
+		audio
+			filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(80%)
+			width: 80%
+			height: 25px
+			position: relative
+			margin: auto
+			left: 10%
+			right: 0
 	.tracks
 		display: block;
 		flex-grow: 0;
@@ -42,13 +51,16 @@
 		top: 0
 		right: 0
 		margin-left: 80rem
-		audio
-			filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(80%)
-			width: 400px
-			height: 25px
 		@include respond-to(phones)
 			display: block
 			margin: auto
 			width: 70%
-			audio
-				width: 100%
+		ol
+			margin: 0 20rem
+			padding: 0
+			li
+				cursor: pointer
+				padding: 5rem 0
+				&.playing
+					color: #f00
+					opacity: 1
