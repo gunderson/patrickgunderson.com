@@ -10,6 +10,14 @@
             "millions-of-needles"
 
         ],
+        "client-work":[
+            "ar-glasses",
+            "us-open-sessions",
+            "the-beauty-inside",
+            "vanishing-game",
+            "dream-road",
+            "sense8-brainwave-symphony"
+        ],
         "loops":[
             "urchin",
             "9-sprites",
@@ -41,15 +49,6 @@
             "generative-composition-1564-1"
         ],
         "experimental":[
-
-        ],
-        "client-work":[
-            "us-open-sessions",
-            "the-beauty-inside",
-            "vanishing-game",
-            "passion-genome",
-            "dream-road",
-            "sense8-brainwave-symphony"
         ]
     },
     "projects": [
@@ -1572,6 +1571,104 @@
             "awards": [],
             "producers": [],
             "background_color": "#000"
+        },
+        {
+            "title": "AR Glasses",
+            "slug": "ar-glasses",
+            "date": "2021",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "youtube-video",
+            "cover_image": "/images/ar-glasses/ar-glasses.jpg",
+            "thumbnails": ["/images/ar-glasses/ar-glasses.jpg", "/images/ar-glasses/googleglasses.png"],
+            "images": ["/images/ar-glasses/ar-glasses.jpg", "/images/ar-glasses/googleglasses.png"],
+            "video": ["lj0bFX9HXeE"],
+            "external_url": ["https://www.youtube.com/watch?v=lj0bFX9HXeE"],
+            "description": "<p><strong>Iris</strong> was a project that aimed to augment the world with seamless integration of physical with smart digital. While I worked at Google I was on a prototyping team tasked with ideating and building new applications and interaction modalities for these glasses. I also served as the project's sound designer. A lot of the work I did is hidden by NDA and will never see the light of day, but it was instrumental in guiding product decisions from basic features to system-wide UX.",
+            "tags": ["ar", "xr", "interactive", "client-work"],
+            "roles": ["UX Engineer"],
+            "producers": ["Google"],
+            "awards": [],
+            "background_color": "transparent"
+        },
+
+        {
+            "title": "Google AR UX Guidelines",
+            "slug": "ar-ux",
+            "date": "2019",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "gallery",
+            "cover_image": "/images/ar-ux/dragtoplace.jpg",
+            "thumbnails": ["/images/ar-ux/dragtoplace.jpg", "/images/ar-ux/anchoringyes.jpg", "/images/ar-ux/continuousdiscovery.jpg", "/images/ar-ux/autoplacement.jpg", "/images/ar-ux/maxplacementdistance.jpg", "/images/ar-ux/presence.jpg" ],
+            "images":["/images/ar-ux/dragtoplace.gif", "/images/ar-ux/anchoringyes.gif", "/images/ar-ux/continuousdiscovery.gif", "/images/ar-ux/autoplacement.gif", "/images/ar-ux/maxplacementdistance.gif", "/images/ar-ux/presence.gif" ],
+            "video": [],
+            "external_url": ["https://developers.google.com/ar/design/interaction/ux"],
+            "description": "<p>AR is an entirely new medium with an entirely new set of design challenges and opportunities. As part of the ARUX team I contributed a series of demos, documentation and presentations demonstrating what Google has learned so far about AR design and specific best practices, including volumetric interfaces, object placement, scene understanding, and designing for all users.",
+            "tags": ["ar", "xr", "interactive", "social", "client-work"],
+            "roles": ["Tech Lead", "UX Engineer"],
+            "producers": ["Google"],
+            "awards": [],
+            "background_color": "transparent"
+        },
+
+        {
+            "title": "ARCore Elements",
+            "slug": "arcore-elements",
+            "date": "2019",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "gallery",
+            "cover_image": "/images/arcore-elements/screen-0.webp",
+            "thumbnails": ["/images/arcore-elements/screen-0.webp","/images/arcore-elements/screen-1.webp","/images/arcore-elements/screen-2.webp","/images/arcore-elements/screen-3.webp","/images/arcore-elements/screen-4.webp","/images/arcore-elements/screen-5.webp"],
+            "images": ["/images/arcore-elements/screen-0.webp","/images/arcore-elements/screen-1.webp","/images/arcore-elements/screen-2.webp","/images/arcore-elements/screen-3.webp","/images/arcore-elements/screen-4.webp","/images/arcore-elements/screen-5.webp"],
+            "video": ["BlM2T1beKbg"],
+            "external_url": ["https://developers.google.com/ar/design/interaction/ux"],
+            "description": "<p>ARCore Elements makes high-quality AR production accessible and fun. It shows you how to set user expectations in AR, how to encourage users to move around and explore the AR world, how to interact with virtual objects, and more.</p><p>AR Principles and Patterns Covered</p><ul><li>Designing environments</li><li>Creating and manipulating virtual objects</li><li>Real-world movement</li><li>Making a user interface</li></ul>",
+            "tags": ["ar", "xr", "interactive", "social", "client-work"],
+            "roles": ["Tech Lead", "UX Engineer"],
+            "producers": ["Google"],
+            "awards": [],
+            "background_color": "transparent"
+        },
+        {
+            "title": "I/O 2019",
+            "slug": "io-2019",
+            "date": "2019",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "video",
+            "cover_image": "/images/io-2019/main.jpg",
+            "thumbnails": ["/images/io-2019/main.jpg"],
+            "images": ["/images/io-2019/main.jpg"],
+            "video": ["/videos/io-2019-garden.mp4"],
+            "external_url": ["https://www.youtube.com/watch?v=lj0bFX9HXeE"],
+            "description": "Every year, Google hosts I/O, an event where developers come to learn about all of the things Google is working on and to see how to implement them. The most exciting projects get to develop dedicated demo spaces called sandboxes. As the UX lead for AR intelligence, I worked with Novel and our internal team to develop the AR sandbox at I/O 2019 where we showed off the ability to interact virtually together, to detect and react to real-time face meshes and to project virtual overlays ontop of real products.",
+            "tags": ["ar", "xr", "interactive", "social", "client-work"],
+            "roles": ["Technical Director", "UX Engineer"],
+            "producers": ["Google", "Novel"],
+            "awards": [],
+            "background_color": "transparent"
+        },
+
+        {
+            "title": "I/O 2018",
+            "slug": "io-2018",
+            "date": "2018",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "vimeo-video",
+            "cover_image": "/images/io-2018/main.jpg",
+            "thumbnails": ["/images/io-2018/main.jpg"],
+            "images": ["/images/io-2018/main.jpg"],
+            "video": ["268634396"],
+            "external_url": ["https://vimeo.com/268634396"],
+            "description": "Once a year, Google hosts an event called I/O where developers come to learn about all of the things Google is working on and to see how to implement them. The most exciting projects get to develop dedicated demo spaces called sandboxes. As the UX lead for AR intelligence, I worked with Novel and our internal team to develop the AR sandbox at I/O 2018, a virtual art gallery where we installed three pieces of bespoke artwork. When scanned by our app, the artwork came alive in the virtual space.",
+            "tags": ["ar", "xr", "interactive", "social", "client-work"],
+            "roles": ["Technical Director", "UX Engineer"],
+            "producers": ["Google", "Novel"],
+            "awards": [],
+            "background_color": "transparent"
         },
         {
             "title": "U.S. Open Sessions",

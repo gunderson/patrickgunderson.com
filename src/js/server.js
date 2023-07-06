@@ -87,6 +87,7 @@ app.get('/:section/:slug', (req, res) => {
   let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
   res.locals.adjacent = getAdjacent(req.params.slug);
   let data = _.find(siteData.projects, {slug: req.params.slug});
+  console.log(data);
   res.locals = _.extend(res.locals, data);
   let template = data.template || req.params.section;
   res.render(template);

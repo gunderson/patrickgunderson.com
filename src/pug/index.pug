@@ -13,12 +13,38 @@ html
       
       include _header
       .section-nav
+        a(href="#client-work") Client Work
         a(href="#art") Art
         a(href="#music") Music
-        a(href="#client-work") Client Work
         a(href="#about") About
       
       .shadow
+
+    section.commercial.work
+      a#commercial(name="client-work")
+        h2 Client Work
+      h4 Projects
+      ul
+        each project in locals["client-work"]
+          li 
+            a.fill(href="/client-work/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+              h4 #{project.title}
+      
+      a(href="/list/client-work") More Client Work
+      //- ul 
+      //-   li Google AR I/O
+      //-   li Google AR UX
+      //-   li US Open Sessions
+      //-   li Sense8 Brainwave Symphony
+      //-   li Project Hardin
+      //-   li Land Rover Stories
+      //-   li 30 Years of Mac
+      //-   li JFK
+      //-   li Gensler
+      //-   li Passion Genome
+      //-   li The Beauty Inside
+      //-   li Infiniti Dream Road
+      //-   li SuperBowl.com
     //- .pull-quote "The origin" is an arbitrary, dimensionless point in space with no width, length, or height, from which we can reference all other points.
     section.art.work
       a#art(name="art")
@@ -69,46 +95,17 @@ html
           li 
             a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
               h4 #{project.title}
-    section.commercial.work
-      a#commercial(name="client-work")
-        h2 Client Work
-      h4 Projects
-      ul
-        each project in locals["client-work"]
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      
-      a(href="/list/client-work") More Client Work
-      //- ul 
-      //-   li Google AR I/O
-      //-   li Google AR UX
-      //-   li US Open Sessions
-      //-   li Sense8 Brainwave Symphony
-      //-   li Project Hardin
-      //-   li Land Rover Stories
-      //-   li 30 Years of Mac
-      //-   li JFK
-      //-   li Gensler
-      //-   li Passion Genome
-      //-   li The Beauty Inside
-      //-   li Infiniti Dream Road
-      //-   li SuperBowl.com
+    
     section.about.work
       a#about(name="about")
         h2 About
       img(src="/images/patrick4.jpg").portrait
-      p In the seedy underbelly of Las Vegas, amidst the blinding neon lights and the cacophony of slot machines, resides a man like no other. Patrick Gunderson, a true renegade of the artistic realm, defies categorization as a mere artist, designer, programmer, or director. No, my friend, Gunderson is a wild, untamed force that defies the constraints of conventional labels.
+      p Patrick Gunderson is a generative artist whose work explores the interplay between mathematical order and organic chaos, and the integration of virtual and real space. This has taken form as integrated installations, interactive artworks and unique expressions of data.
 
-      p With a career spanning a quarter of a century, Gunderson's artistic escapades have rattled the very foundations of creative expression. His rebellious spirit, fueled by an insatiable hunger for pushing boundaries, has earned him a fearsome reputation and a cabinet overflowing with prestigious awards. Fortune 500 companies tremble at the mere mention of his name, eagerly seeking his radical touch to infuse their brands with a touch of genius.
+      p Patrick’s was named one of "21 Heros of Data Visualization" by Business Week and his generative artwork, music, and data visualizations have been featured by MIT, Rolling Stone, AdWeek, Creativity, Engadget. The Verge, Fast Company, The Creator's Project, and the Google Chrome Experiments gallery. 
 
-      p In the swirling vortex of Gunderson's mind, art and technology merge in a psychedelic dance. His generative masterpieces, birthed from the depths of oscillation, twist and morph into mesmerizing prints, videos, and interactive tools. He paints with code, crafting digital symphonies that intoxicate the senses and leave audiences spellbound.
+      p In addition to his personal artwork, Patrick has designed, developed and directed high-traffic and award-winning digital productions for clients such as IBM, Intel, Netflix, Nissan, Land Rover, Adidas, Citibank, and the National Football League. His experience and vision give him substantive insight into all aspects of digital production.
 
-      p But Gunderson's art is no mere commodity to be bought and sold. It is a visceral experience that plunges you into the depths of his unfiltered consciousness. He challenges the status quo, igniting a revolution within the creative realms. With every stroke of his digital brush, he dares us to question, to rebel, and to forge our own path in this twisted carnival we call life.
-
-      p  Patrick Gunderson, the man, the myth, the mad genius, continues to traverse uncharted territories, leaving a wake of awe and bewilderment in his trail. In the realm of art, design, programming, and directing, he stands tall as a maverick, a torchbearer of unbridled creativity. Brace yourself, my friend, for the journey into Gunderson's world is not for the faint-hearted—it is a wild ride through a kaleidoscope of mind-altering brilliance.
-      p -Courtesy, ChatGPT as Hunter S. Thompson
-      
       h4 Contact Me 
       p The fastest way to get in touch is to send me a DM on #[a(href="http://twitter.com/gunderson") Twitter @gunderson].
       
