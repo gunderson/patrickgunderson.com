@@ -1584,7 +1584,7 @@
             "images": ["/images/ar-glasses/ar-glasses.jpg", "/images/ar-glasses/googleglasses.png"],
             "video": ["lj0bFX9HXeE"],
             "external_url": ["https://www.youtube.com/watch?v=lj0bFX9HXeE"],
-            "description": "<p><strong>Iris</strong> was a project that aimed to augment the world with seamless integration of physical with smart digital. While I worked at Google I was on a prototyping team tasked with ideating and building new applications and interaction modalities for these glasses. I also served as the project's sound designer. A lot of the work I did is hidden by NDA and will never see the light of day, but it was instrumental in guiding product decisions from basic features to system-wide UX.",
+            "description": "<p>Iris was a project that aimed to augment the world with seamless integration of physical with smart digital. While I worked at Google I was on a prototyping team tasked with ideating and building new applications and interaction modalities for these glasses. I also served as the project's sound designer. A lot of the work I did is hidden by NDA and will never see the light of day, but it was integral to guiding product decisions and validating concepts from basic features to system-wide UX.",
             "tags": ["ar", "xr", "interactive", "client-work"],
             "roles": ["UX Engineer"],
             "producers": ["Google"],
