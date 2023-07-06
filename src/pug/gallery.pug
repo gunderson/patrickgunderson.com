@@ -27,7 +27,9 @@ html
                     
                     a(href="https://codepen.io").external-link
                         .fa.fa-external-link
-                .medium #{medium}
+                .medium #{medium} 
+                    each role in roles
+                        span - #{role} 
                 .description !{description}
                 .awards
         

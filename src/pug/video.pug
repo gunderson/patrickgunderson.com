@@ -24,7 +24,9 @@ html.video-page
                         -if (external_url.includes("codepen"))
                             | See the code 
                         .fa.fa-external-link
-                .medium #{medium}
+                .medium #{medium} 
+                    each role in roles
+                        span - #{role}
                 .description #{description}
                 .awards 
                     each award in awards

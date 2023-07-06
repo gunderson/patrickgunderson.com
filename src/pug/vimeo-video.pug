@@ -25,7 +25,10 @@ html
                     -if (external_url)
                         a(href=external_url).external-link
                             .fa.fa-external-link
-                .medium #{medium}
+                
+                .medium #{medium} 
+                    each role in roles
+                        span - #{role}
                 .description !{description}
                 .awards 
                     each award in awards
