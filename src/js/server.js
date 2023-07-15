@@ -4,6 +4,7 @@ const _ = require('lodash');
 const app = express();
 const port = process.env.PORT || 3000;
 const PATH = require("path");
+const FS = require('fs');
 
 app.get("/css/*",
   sassMiddleware({
@@ -19,6 +20,10 @@ app.get("/css/*",
 
 app.use('/favicon.ico' , function(req , res){
   res.redirect(301, 'https://patrickgunderson.com/images/favicon.png')
+});
+app.use('/robots.txt', function (req, res, next) {
+  res.type('text/plain')
+  res.send("User-agent: *\nDisallow: /");
 });
 
 
