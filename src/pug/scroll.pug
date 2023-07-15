@@ -1,30 +1,32 @@
 doctype html
 html.scroll-page(lang="en")
-    head
-        include _head
-        link(rel="stylesheet", href="/css/scroll-page.css")
+	head
+		include _head
+		link(rel="stylesheet", href="/css/scroll-page.css")
 
-    body.scroll-page
-        include _header
-        .media
-            h1 #{tags}
-            ul.list
-                each project, index in projects
-                    li
-                        if (project.template == "gallery")
-                            include _scroll-gallery
-                            
-                        if (project.template == "video")
-                            include _scroll-video
-                        //- a(href=["",project.section,project.slug].join("/"))
-                        //-     .main
-                        //-         img(src=project.images[0])
-                        //-     .meta
-                        //-         .title #{project.title}
-                        //-             span.date #{project.date}
+	body.scroll-page
+		include _header
+		.media
+			h1 #{tags}
+			ul.list
+				each project, index in projects
+					li
+						if (project.template == "gallery")
+							include _scroll-gallery
+							
+						if (project.template == "video")
+							include _scroll-video
+						//- a(href=["",project.section,project.slug].join("/"))
+						//-     .main
+						//-         img(src=project.images[0])
+						//-     .meta
+						//-         .title #{project.title}
+						//-             span.date #{project.date}
 
-                    
-        
-        include _footer
-    script
-        include ../js/scroll-page.js
+					
+		
+		include _footer
+	script
+		include ../js/scroll-page.js
+	script 
+	  include ../js/kbux.js

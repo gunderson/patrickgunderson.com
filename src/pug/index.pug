@@ -1,171 +1,173 @@
 doctype html
 html(lang="en")
-  head
-    include _head
-    link(rel="stylesheet", href="/css/home-page.css")
-  body.home-page
-    .hero
-      .bg
-        .images
-          each project in hero
-            img(src=project.cover_image, alt="cover image gallery")
-      .bg-transition
-      
-      include _header
-      .section-nav
-        a(href="#client-work") Client Work
-        a(href="#art") Art
-        a(href="#music") Music
-        a(href="#about") About
-      
-      .shadow
+	head
+		include _head
+		link(rel="stylesheet", href="/css/home-page.css")
+	body.home-page
+		.hero
+			.bg
+				.images
+					each project in hero
+						img(src=project.cover_image, alt="cover image gallery")
+			.bg-transition
+			
+			include _header
+			.section-nav
+				a(href="#client-work") Client Work
+				a(href="#art") Art
+				a(href="#music") Music
+				a(href="#about") About
+			
+			.shadow
 
-    section.commercial.work
-      a#commercial(name="client-work")
-        h2 Client Work
-      h4 Projects
-      ul
-        each project in locals["client-work"]
-          li 
-            a.fill(href="/client-work/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      
-      a(href="/list/client-work") More Client Work
-      //- ul 
-      //-   li Google AR I/O
-      //-   li Google AR UX
-      //-   li US Open Sessions
-      //-   li Sense8 Brainwave Symphony
-      //-   li Project Hardin
-      //-   li Land Rover Stories
-      //-   li 30 Years of Mac
-      //-   li JFK
-      //-   li Gensler
-      //-   li Passion Genome
-      //-   li The Beauty Inside
-      //-   li Infiniti Dream Road
-      //-   li SuperBowl.com
-    //- .pull-quote "The origin" is an arbitrary, dimensionless point in space with no width, length, or height, from which we can reference all other points.
-    section.art.work
-      a#art(name="art")
-        h2 Art
-      h4 Loops
-      ul
-        each project in loops
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      a(href="/scroll/loop") More Loops
+		section.commercial.work
+			a#commercial(name="client-work")
+				h2 Client Work
+			h4 Projects
+			ul
+				each project in locals["client-work"]
+					li 
+						a.fill(href="/client-work/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+			
+			a(href="/list/client-work") More Client Work
+			//- ul 
+			//-   li Google AR I/O
+			//-   li Google AR UX
+			//-   li US Open Sessions
+			//-   li Sense8 Brainwave Symphony
+			//-   li Project Hardin
+			//-   li Land Rover Stories
+			//-   li 30 Years of Mac
+			//-   li JFK
+			//-   li Gensler
+			//-   li Passion Genome
+			//-   li The Beauty Inside
+			//-   li Infiniti Dream Road
+			//-   li SuperBowl.com
+		//- .pull-quote "The origin" is an arbitrary, dimensionless point in space with no width, length, or height, from which we can reference all other points.
+		section.art.work
+			a#art(name="art")
+				h2 Art
+			h4 Loops
+			ul
+				each project in loops
+					li 
+						a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+			a(href="/scroll/loop") More Loops
 
-      h4 Generators
-      ul
-        each project in generator
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      a(href="/scroll/generator") More Generators
-      //- h4 Physical 
-      //- ul
-      //-   each project in physical
-      //-     li 
-      //-       a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
-      //-         h4 #{project.title}
-              
-      //- a(href="/scroll/physical") More Physical
-      h4 Prints
-      ul
-        each project in prints
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      a(href="/scroll/print") More Prints
-      h4 VR 
-      ul
-        each project in vr
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-      .pull-quote Oscillation is the key to the universe. 
-    section.music.work
-      a#music(name="music")
-        h2 Music
-      h4 &nbsp;
-      ul 
-        each project in music
-          li 
-            a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
-              h4 #{project.title}
-    
-    section.about.work
-      a#about(name="about")
-        h2 About
-      img(src="/images/patrick4.jpg" alt="Black & White portrait of Patrick Gunderson").portrait
-      p Patrick Gunderson is a generative artist whose work explores the interplay between mathematical order and organic chaos, and the integration of virtual and real space. This has taken form as integrated installations, interactive artworks and unique expressions of data.
+			h4 Generators
+			ul
+				each project in generator
+					li 
+						a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+			a(href="/scroll/generator") More Generators
+			//- h4 Physical 
+			//- ul
+			//-   each project in physical
+			//-     li 
+			//-       a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+			//-         h4 #{project.title}
+							
+			//- a(href="/scroll/physical") More Physical
+			h4 Prints
+			ul
+				each project in prints
+					li 
+						a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+			a(href="/scroll/print") More Prints
+			h4 VR 
+			ul
+				each project in vr
+					li 
+						a.fill(href="/art/"+project.slug, style='background-color:'+project.background_color+';background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+			.pull-quote Oscillation is the key to the universe. 
+		section.music.work
+			a#music(name="music")
+				h2 Music
+			h4 &nbsp;
+			ul 
+				each project in music
+					li 
+						a.fill(href="/art/"+project.slug, style='background-color:#111;background-image:url("'+project.cover_image+'")') 
+							h4 #{project.title}
+		
+		section.about.work
+			a#about(name="about")
+				h2 About
+			img(src="/images/patrick4.jpg" alt="Black & White portrait of Patrick Gunderson").portrait
+			p Patrick Gunderson is a generative artist whose work explores the interplay between mathematical order and organic chaos, and the integration of virtual and real space. This has taken form as integrated installations, interactive artworks and unique expressions of data.
 
-      p Patrick’s was named one of "21 Heros of Data Visualization" by Business Week and his generative artwork, music, and data visualizations have been featured by MIT, Rolling Stone, AdWeek, Creativity, Engadget. The Verge, Fast Company, The Creator's Project, and the Google Chrome Experiments gallery. 
+			p Patrick’s was named one of "21 Heros of Data Visualization" by Business Week and his generative artwork, music, and data visualizations have been featured by MIT, Rolling Stone, AdWeek, Creativity, Engadget. The Verge, Fast Company, The Creator's Project, and the Google Chrome Experiments gallery. 
 
-      p In addition to his personal artwork, Patrick has designed, developed and directed high-traffic and award-winning digital productions for clients such as IBM, Intel, Netflix, Nissan, Land Rover, Adidas, Citibank, and the National Football League. His experience and vision give him substantive insight into all aspects of digital production.
+			p In addition to his personal artwork, Patrick has designed, developed and directed high-traffic and award-winning digital productions for clients such as IBM, Intel, Netflix, Nissan, Land Rover, Adidas, Citibank, and the National Football League. His experience and vision give him substantive insight into all aspects of digital production.
 
-      h4 Contact Me 
-      p The fastest way to get in touch is to send me a DM on #[a(href="http://twitter.com/gunderson") Twitter @gunderson].
-      
-      p Or email me pat@theorigin.net.
+			h4 Contact Me 
+			p The fastest way to get in touch is to send me a DM on #[a(href="http://twitter.com/gunderson") Twitter @gunderson].
+			
+			p Or email me pat@theorigin.net.
 
-      include _socials
+			include _socials
 
-    section.clients.work
-      h2 Clients
-      h4 &nbsp;
-      .clients 
-        include ../assets/images/clients/adidas.svg
-        include ../assets/images/clients/apple.svg
-        include ../assets/images/clients/google.svg
-        include ../assets/images/clients/ibm.svg
-        include ../assets/images/clients/infiniti.svg
-        include ../assets/images/clients/instagram.svg
-        include ../assets/images/clients/intel.svg
-        include ../assets/images/clients/jfk.svg
-        include ../assets/images/clients/land-rover.svg
-        include ../assets/images/clients/netflix.svg
-        include ../assets/images/clients/nfl.svg
-        include ../assets/images/clients/nissan.svg
-        include ../assets/images/clients/twitter.svg
-        include ../assets/images/clients/youtube.svg
-        include ../assets/images/clients/kia.svg
-        include ../assets/images/clients/south-park.svg
-        include ../assets/images/clients/fox.svg
-        include ../assets/images/clients/disney.svg
-        include ../assets/images/clients/verizon.svg
-        include ../assets/images/clients/kahlua.svg
-        include ../assets/images/clients/heineken.svg
-        include ../assets/images/clients/cac.svg
-        include ../assets/images/clients/no-kid-hungry.svg
-    section.recognition 
-      a#recognition(name="recognition")
-        h2 Recognition
-      h4 &nbsp;
+		section.clients.work
+			h2 Clients
+			h4 &nbsp;
+			.clients 
+				include ../assets/images/clients/adidas.svg
+				include ../assets/images/clients/apple.svg
+				include ../assets/images/clients/google.svg
+				include ../assets/images/clients/ibm.svg
+				include ../assets/images/clients/infiniti.svg
+				include ../assets/images/clients/instagram.svg
+				include ../assets/images/clients/intel.svg
+				include ../assets/images/clients/jfk.svg
+				include ../assets/images/clients/land-rover.svg
+				include ../assets/images/clients/netflix.svg
+				include ../assets/images/clients/nfl.svg
+				include ../assets/images/clients/nissan.svg
+				include ../assets/images/clients/twitter.svg
+				include ../assets/images/clients/youtube.svg
+				include ../assets/images/clients/kia.svg
+				include ../assets/images/clients/south-park.svg
+				include ../assets/images/clients/fox.svg
+				include ../assets/images/clients/disney.svg
+				include ../assets/images/clients/verizon.svg
+				include ../assets/images/clients/kahlua.svg
+				include ../assets/images/clients/heineken.svg
+				include ../assets/images/clients/cac.svg
+				include ../assets/images/clients/no-kid-hungry.svg
+		section.recognition 
+			a#recognition(name="recognition")
+				h2 Recognition
+			h4 &nbsp;
 
-      .awards
-        .award.emmy
-        .award.cannes-lion
-        .award.d-and-ad 
-        .award.fwa 
-        .award.adc
-        .award.adobe 
-        .award.london-international
-        .award.webby 
-        .award.one-show 
-        .award.mashie 
-        .award.sxsw 
-        .award.communication-arts 
-        .award.clio 
-        .award.creativity
-        .award.creative-sandbox
-        .award.chrome-experiment
-        .award.awwward
+			.awards
+				.award.emmy
+				.award.cannes-lion
+				.award.d-and-ad 
+				.award.fwa 
+				.award.adc
+				.award.adobe 
+				.award.london-international
+				.award.webby 
+				.award.one-show 
+				.award.mashie 
+				.award.sxsw 
+				.award.communication-arts 
+				.award.clio 
+				.award.creativity
+				.award.creative-sandbox
+				.award.chrome-experiment
+				.award.awwward
 
-    
-    include _footer
+		
+		include _footer
 
-    script 
-      include ../js/hero-fade.js
+		script 
+			include ../js/hero-fade.js
+		script 
+			include ../js/kbux.js

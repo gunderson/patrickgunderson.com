@@ -7,17 +7,17 @@ videoElement.addEventListener('click', onClickVideo);
 overlayElement.addEventListener('click', onClickOverlay);
 
 function onPlay(e){
-    overlayElement.style.display = "none";
+	overlayElement.style.display = "none";
 }
 
 function onPause(e){
-    overlayElement.style.display = "flex";
+	overlayElement.style.display = "flex";
 }
 
 function onClickOverlay(e){
-    videoElement.play();
+	videoElement.play();
 }
 
 function onClickVideo(e){
-    videoElement.pause();
+	videoElement.pause();
 }

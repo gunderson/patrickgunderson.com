@@ -1,12 +1,12 @@
 {
-  "name": "patrickgunderson.com",
-  "script": "/var/www/patrickgunderson.com/src/js/server.js",
-  "instances": 1,
-  "exec_mode": "cluster",
-  "watch": true,
-  "ignore_watch": ["node_modules", "built"],
-  "merge_logs": true,
-  "env": {
-    "PORT": 3000
-  }
+	"name": "patrickgunderson.com",
+	"script": "/var/www/patrickgunderson.com/src/js/server.js",
+	"instances": 1,
+	"exec_mode": "cluster",
+	"watch": true,
+	"ignore_watch": ["node_modules", "built"],
+	"merge_logs": true,
+	"env": {
+		"PORT": 3000
+	}
 }

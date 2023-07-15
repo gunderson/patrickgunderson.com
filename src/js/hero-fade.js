@@ -19,29 +19,29 @@ let frontElement = document.querySelector('.bg-transition');
 let rearElement = document.querySelector('.bg');
 
 function fadeUp(){
-    frontLevel += .5 * (1/60);
-    if (frontLevel >= 1){
-        completeTransition();
-        return;
-    }
-    frontElement.style.opacity = frontLevel;
+	frontLevel += .5 * (1/60);
+	if (frontLevel >= 1){
+		completeTransition();
+		return;
+	}
+	frontElement.style.opacity = frontLevel;
 }
 
 function completeTransition(){
-    frontLevel = 0;
-    rearElement.style.backgroundImage = frontElement.style.backgroundImage;
-    // delay hiding the element to fix flash between the image switch
-    setTimeout(()=> {frontElement.style.opacity = 0;} , 100);
-    clearInterval(intervalAnimationId);
+	frontLevel = 0;
+	rearElement.style.backgroundImage = frontElement.style.backgroundImage;
+	// delay hiding the element to fix flash between the image switch
+	setTimeout(()=> {frontElement.style.opacity = 0;} , 100);
+	clearInterval(intervalAnimationId);
 }
 
 function startTransition(){
-    ++currentIndex;
-    if(currentIndex >= heroImages.length){
-        currentIndex = 0;
-    }
-    frontElement.style.backgroundImage = `url("${heroImages[currentIndex]}")`;
-    intervalAnimationId = setInterval(fadeUp, 16);
+	++currentIndex;
+	if(currentIndex >= heroImages.length){
+		currentIndex = 0;
+	}
+	frontElement.style.backgroundImage = `url("${heroImages[currentIndex]}")`;
+	intervalAnimationId = setInterval(fadeUp, 16);
 }
 
 // ------------------------------------------------------------------------
@@ -51,15 +51,15 @@ window.addEventListener("focus", startHeroCycle);
 window.addEventListener("blur", pauseHeroCycle);
 
 function startHeroCycle(){
-    if (intervalLoopId){
-        return;
-    }
-    intervalLoopId = setInterval(startTransition, 8000);
+	if (intervalLoopId){
+		return;
+	}
+	intervalLoopId = setInterval(startTransition, 8000);
 }
 
 function pauseHeroCycle(){
-    clearInterval(intervalLoopId);
-    intervalLoopId = null;
+	clearInterval(intervalLoopId);
+	intervalLoopId = null;
 }
 
 startHeroCycle()
