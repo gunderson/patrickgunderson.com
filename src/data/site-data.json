@@ -1593,6 +1593,25 @@
         },
 
         {
+            "title": "ARCore Launch",
+            "slug": "arcore",
+            "date": "2018",
+            "medium": "Augmented Reality",
+            "section": "client-work",
+            "template": "youtube-video",
+            "cover_image": "/images/arcore/arcore-logo2.jpg",
+            "thumbnails": ["/images/arcore/arcore-logo2.jpg"],
+            "images": ["/images/ar-core/arcore-logo2.jpg"],
+            "video": ["ttdPqly4OF8"],
+            "external_url": ["https://developers.google.com/ar/"],
+            "description": "<p>ARCore is Google’s augmented reality SDK offering cross-platform APIs to build new immersive experiences on Android, iOS, Unity, and Web. Transform the way people play, shop, learn, create, and experience the world together through contextual understanding about people, places, and things.</p><P>Following the release of ARKit by Apple, Google decided to pivot from it's Tango product which required special devices with dedicated depth sensing hardware and to release it's own camera-only AR solution we had been working on behind the scenes for months.</p><p>At and following launch I provided examples of how to use the framework in Unity, and SDK components for developers to drop into their own projects.</p>",
+            "tags": ["ar", "xr", "interactive", "client-work"],
+            "roles": ["UX Engineer"],
+            "producers": ["Google"],
+            "awards": [],
+            "background_color": "transparent"
+        },
+        {
             "title": "Google AR UX Guidelines",
             "slug": "ar-ux",
             "date": "2019",

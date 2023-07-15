@@ -3,7 +3,7 @@
   "version": "1.6.3",
   "description": "Sample Website",
   "scripts": {
-    "start": "node src/js/server.js",
+    "start": "node --inspect src/js/server.js",
     "build": "node build.js",
     "precommit": "npm version patch"
   },

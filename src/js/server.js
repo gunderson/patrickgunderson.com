@@ -5,16 +5,22 @@ const app = express();
 const port = process.env.PORT || 3000;
 const PATH = require("path");
 
-app.use(
+app.get("/css/*",
   sassMiddleware({
     src: __dirname + '/../sass',
     dest: __dirname + '/../../built/css',
-    debug: true,
+    debug: false,
     indentedSyntax : true,
-    // outputStyle: 'compressed',
+    outputStyle: 'compressed',
     prefix: '/css'
   })
 );
+
+
+app.use('/favicon.ico' , function(req , res){
+  res.redirect(301, 'https://patrickgunderson.com/images/favicon.png')
+});
+
 
 app.use(express.static(__dirname + '/../../public'));
 app.use('/js', express.static(__dirname));
@@ -45,6 +51,22 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get("/sitemap", (req, res) => {
+  let host = "https://patrickgunderson.com";
+  let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+  let urls = siteData.projects.map((proj) => `${host}/${proj.section}/${proj.slug}`);
+  urls.push(
+    `${host}/scroll/print`,
+    `${host}/scroll/video`, 
+    `${host}/scroll/art`, 
+    `${host}/list/music`, 
+    `${host}/list/client-work`,
+    `${host}/list/generative`,
+  );
+  res.type('txt')
+  res.send(urls.join("\n"));
+})
+
 app.get('/adjacent/:slug', (req, res) => {
   res.send(getAdjacent(req.params.slug));
 });
@@ -53,15 +75,17 @@ app.get('/scroll/:tags', (req, res) => {
   let dataList = getByTags(req.params.tags);
   res.locals.tags = dataList.tags
   res.locals.projects = dataList.projects;
+  
+  res.locals.template = "scroll";
 
   res.render('scroll');
 });
 
 app.get('/list/:tags', (req, res) => {
   let dataList = getByTags(req.params.tags);
-  res.locals.tags = dataList.tags
+  res.locals.tags = dataList.tags.toLowerCase();
   res.locals.projects = dataList.projects;
-
+  res.locals.template = "list";
   res.render('list');
 });
 
@@ -77,7 +101,6 @@ app.get('/data/:slug', (req, res) => {
   res.send(data);
 });
 
-
 app.get('/:section', (req, res) => {
   res.render(req.params.section);
 });
@@ -85,9 +108,19 @@ app.get('/:section', (req, res) => {
 app.get('/:section/:slug', (req, res) => {
   // TODO: validate section and slug
   let siteData = require(PATH.join(__dirname, '../data/site-data.json'));
+
+  if (_.filter(siteData.projects, {"slug": req.params.slug}).length === 0){
+    console.log(req);
+    return res.send("no such project");
+  }
+
+
   res.locals.adjacent = getAdjacent(req.params.slug);
   let data = _.find(siteData.projects, {slug: req.params.slug});
-  console.log(data);
+
+  // console.log(`\n\n\n -- RUNNING APP.GET :: ${req.originalUrl} \n\n\n`);
+
+  // console.log(data);
   res.locals = _.extend(res.locals, data);
   let template = data.template || req.params.section;
   res.render(template);
@@ -137,7 +170,7 @@ app.post('/github-webhook', (req, res) => {
   }
 });
 
-app.listen(port, () => {
+var server =app.listen(port, () => {
   console.log('Server is running on port ' + port);
 });
 
@@ -181,3 +214,11 @@ function getByTags(tags){
   };
 }
 
+
+// elegantly end the server
+['SIGINT', 'SIGTERM', 'SIGQUIT']
+  .forEach(signal => process.on(signal, () => {
+    /** do your logic */
+    server.close();
+    process.exit();
+  }));

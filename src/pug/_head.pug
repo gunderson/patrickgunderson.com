@@ -1,18 +1,27 @@
+//- presentation
+
+meta(name="viewport",content="width=device-width, initial-scale=1, minimum-scale=1")
+link(rel="icon", type="image/x-png", href="/images/favicon2.png")
+link(rel="stylesheet", href="/css/style.css")
+meta(property="og:type" content="website")
+meta(name='theme-color' content='#111111')
+
+//- title
+
 if (title)
     title #{title} - Patrick Gunderson
     meta(name="twitter:title" content=`${title} - Patrick Gunderson`)
     meta(name="og:title" content=`${title} - Patrick Gunderson`)
+else if (template== "list" || template=="scroll")
+    title #{`${title} - List ${tags}- Patrick Gunderson`}
+    meta(name="twitter:title" content=`${title} - List ${tags}- Patrick Gunderson`)
+    meta(name="og:title" content=`${title} - List ${tags}- Patrick Gunderson`)
 else 
     title PJG - Patrick Gunderson
     meta(name="twitter:title" content="Patrick Gunderson's Portfolio")
     meta(property="og:title" content="Patrick Gunderson's Portfolio")
 
-
-meta(name="viewport",content="width=device-width, initial-scale=1, minimum-scale=1")
-link(rel="icon", type="image/x-png", href="/images/favicon2.png")
-link(rel="stylesheet", href="/css/style.css")
-
-meta(property="og:type" content="website")
+//- Address
 
 if (slug)
     meta(property="og:url" content=`https://patrickgunderson.com/${section}/${slug}`)
@@ -21,6 +30,8 @@ else
     meta(property="og:url" content="https://patrickgunderson.com/")
     link(rel="canonical" href=`https://patrickgunderson.com/`)
 
+//- Image
+
 if (cover_image)
     meta(property="og:image" content=cover_image)
     meta(name="twitter:image" content=cover_image)
@@ -28,23 +39,25 @@ else
     meta(property="og:image" content="https://patrickgunderson.com/images/composition-72/main.jpg")
     meta(name="twitter:image" content="https://patrickgunderson.com/images/composition-72/main.jpg")
 
+//- Description
+
 if (description)
     meta(name="description" property="og:description" content=desription)
     meta(name="twitter:description" content=desription)
-
 else
     meta(name="description" property="og:description" content="A retrospective of a digital creative craftsman.")
     meta(name="twitter:description" content="A retrospective of a digital creative craftsman.")
 
+//- Other
+
 meta(name="author" property="og:author" content="Patrick Gunderson")
-
-
 meta(name="twitter:card" content="summary_large_image")
 meta(name="twitter:site" content="@gunderson")
-meta(name='theme-color' content='#111111')
 
 script 
     include ../js/touchy.js
+
+//- Analytics
 
 script(async src="https://www.googletagmanager.com/gtag/js?id=G-8CG3BB0G5L")
 script
