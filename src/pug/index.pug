@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
   head
     include _head
     link(rel="stylesheet", href="/css/home-page.css")
@@ -8,7 +8,7 @@ html
       .bg
         .images
           each project in hero
-            img(src=project.cover_image)
+            img(src=project.cover_image, alt="cover image gallery")
       .bg-transition
       
       include _header
@@ -99,7 +99,7 @@ html
     section.about.work
       a#about(name="about")
         h2 About
-      img(src="/images/patrick4.jpg").portrait
+      img(src="/images/patrick4.jpg" alt="Black & White portrait of Patrick Gunderson").portrait
       p Patrick Gunderson is a generative artist whose work explores the interplay between mathematical order and organic chaos, and the integration of virtual and real space. This has taken form as integrated installations, interactive artworks and unique expressions of data.
 
       p Patrick’s was named one of "21 Heros of Data Visualization" by Business Week and his generative artwork, music, and data visualizations have been featured by MIT, Rolling Stone, AdWeek, Creativity, Engadget. The Verge, Fast Company, The Creator's Project, and the Google Chrome Experiments gallery. 
