@@ -25,7 +25,10 @@ app.use('/robots.txt', function (req, res, next) {
   res.type('text/plain')
   res.send(FS.readFileSync(__dirname + '/../assets/robots.txt'));
 });
-
+app.use('/BingSiteAuth.xml', function (req, res, next) {
+  res.type('text/plain')
+  res.send(FS.readFileSync(__dirname + '/../assets/BingSiteAuth.xml'));
+});
 
 app.use(express.static(__dirname + '/../../public'));
 app.use('/js', express.static(__dirname));
