@@ -23,7 +23,7 @@ app.use('/favicon.ico' , function(req , res){
 });
 app.use('/robots.txt', function (req, res, next) {
   res.type('text/plain')
-  res.send("User-agent: *\nDisallow: /");
+  res.send(FS.readFileSync(__dirname + '/../assets/robots.txt'));
 });
 
 
