@@ -1714,6 +1714,25 @@
 			"background_color": "#000"
 		},
 		{
+			"title": "30 Years of Mac",
+			"slug": "30-years-of-mac",
+			"date": "2014",
+			"medium": "Website",
+			"section": "client-work",
+			"template": "youtube-video",
+			"cover_image": "/images/30-years-of-mac/main.webp",
+			"thumbnails": ["/images/30-years-of-mac/main.webp"],
+			"images": ["/images/30-years-of-mac/main.webp"],
+			"video": ["MWCXSCgNvHo"],
+			"external_url": [""],
+			"description": "<p>To commmemorate the 30th annaversary of Macintosh, Apple, MAL and Tool filmed a series of testimonials and built a museum of a website to chronical the path of Mac to that point.</p><p>In addition to the various artists who reminisced about their own first Mac, users were given the oppportunity to share their own first-mac experiences, which were displayed on bespoke data visualizations.</p>",
+			"tags": ["client-work","dataviz","video"],
+			"roles": ["Technical Director"],
+			"producers": ["Apple", "MAL", "Tool of NA"],
+			"awards": ["webby", "one-show"],
+			"background_color": "#000"
+		},
+		{
 			"title": "Land Rover: The Vanishing Game",
 			"slug": "vanishing-game",
 			"date": "2015",
