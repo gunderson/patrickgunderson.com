@@ -14,9 +14,10 @@ if (title)
 	meta(name="twitter:title" content=`${title} - Patrick Gunderson`)
 	meta(name="og:title" content=`${title} - Patrick Gunderson`)
 else if (template== "list" || template=="scroll")
-	title #{`${title} - List ${tags}- Patrick Gunderson`}
-	meta(name="twitter:title" content=`${title} - List ${tags}- Patrick Gunderson`)
-	meta(name="og:title" content=`${title} - List ${tags}- Patrick Gunderson`)
+	- var templateDisplay = template.charAt(0).toUpperCase() + template.substr(1).toLowerCase();
+	title #{`${templateDisplay} - ${tags} - Patrick Gunderson`}
+	meta(name="twitter:title" content=`${templateDisplay} -  ${tags}- Patrick Gunderson`)
+	meta(name="og:title" content=`${templateDisplay} - ${tags}- Patrick Gunderson`)
 else 
 	title PJG - Patrick Gunderson
 	meta(name="twitter:title" content="Patrick Gunderson's Portfolio")
