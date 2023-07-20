@@ -8,18 +8,18 @@ meta(name='theme-color' content='#111111')
 meta(http-equiv='content-language' content='en-us')
 
 //- title
-
+-var siteTitle = "Patrick Gunderson - PJG"
 if (title)
-	title #{title} - Patrick Gunderson
-	meta(name="twitter:title" content=`${title} - Patrick Gunderson`)
-	meta(name="og:title" content=`${title} - Patrick Gunderson`)
+	title #{title} - #{siteTitle}
+	meta(name="twitter:title" content=`${title} - ${siteTitle}`)
+	meta(name="og:title" content=`${title} - ${siteTitle}`)
 else if (template== "list" || template=="scroll")
 	- var templateDisplay = template.charAt(0).toUpperCase() + template.substr(1).toLowerCase();
-	title #{`${templateDisplay} - ${tags} - Patrick Gunderson`}
-	meta(name="twitter:title" content=`${templateDisplay} -  ${tags}- Patrick Gunderson`)
-	meta(name="og:title" content=`${templateDisplay} - ${tags}- Patrick Gunderson`)
+	title #{`${templateDisplay} - ${tags} - ${siteTitle}`}
+	meta(name="twitter:title" content=`${templateDisplay} -  ${tags} - ${siteTitle}`)
+	meta(name="og:title" content=`${templateDisplay} - ${tags} - ${siteTitle}`)
 else 
-	title PJG - Patrick Gunderson
+	title #{siteTitle}
 	meta(name="twitter:title" content="Patrick Gunderson's Portfolio")
 	meta(property="og:title" content="Patrick Gunderson's Portfolio")
 
@@ -28,6 +28,9 @@ else
 if (slug)
 	meta(property="og:url" content=`https://patrickgunderson.com/${section}/${slug}`)
 	link(rel="canonical" href=`https://patrickgunderson.com/${section}/${slug}`)
+else if (template== "list" || template=="scroll")
+	meta(property="og:url" content=`https://patrickgunderson.com/${template}/${tags}`)
+	link(rel="canonical" href=`https://patrickgunderson.com/${template}/${tags}`)
 else
 	meta(property="og:url" content="https://patrickgunderson.com/")
 	link(rel="canonical" href=`https://patrickgunderson.com/`)
