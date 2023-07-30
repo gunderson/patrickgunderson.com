@@ -1,47 +1,47 @@
 doctype html
 html(lang="en")
-    head
-        include _head
-    body.vimeo-page
-        include _header
+	head
+		include _head
+	body.vimeo-page
+		include _header
 
-        .media
-            .hero(style="background-color:"+backround_color)
-                iframe.youtube(
-                    title="vimeo-player",
-                    src="https://player.vimeo.com/video/" + video,
-                    frameborder="0",
-                    allowfullscreen=true)
-                                
-                a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
-                    .fa.fa-chevron-right
-                a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
-                    .fa.fa-chevron-left
-            .meta
-                .title #{title}
-                    span.date #{date}
-                    a(href="https://patrickgunderson.com/"+section+"/"+slug).permanent-link
-                        .fa.fa-bookmark
-                    -if (external_url)
-                        a(href=external_url).external-link
-                            .fa.fa-external-link
-                
-                .medium #{medium} 
-                    each role in roles
-                        span - #{role}
-                .description !{description}
-                .awards 
-                    each award in awards
-                        - var awardClass = "award " + award
-                        div(class=awardClass)
-        
-                .producers
-                    h4 Produced by
-                    ul
-                        each producer in producers
-                            li #{producer}
-        
-        
-        include _footer
-    script 
-      include ../js/kbux.js
+		.media
+			.hero(style="background-color:"+backround_color)
+				iframe.youtube(
+					title="vimeo-player",
+					src="https://player.vimeo.com/video/" + video,
+					frameborder="0",
+					allowfullscreen=true)
+								
+				a.next(href="/" + adjacent.next.section + "/" + adjacent.next.slug)
+					.fa.fa-chevron-right
+				a.prev(href="/" + adjacent.prev.section + "/" + adjacent.prev.slug)
+					.fa.fa-chevron-left
+			.meta
+				.title #{title}
+					span.date #{date}
+					a(href="https://patrickgunderson.com/"+section+"/"+slug).permanent-link
+						.fa.fa-bookmark
+					-if (external_url.length)
+						a(href=external_url target="_blank").external-link
+							.fa.fa-external-link
+				
+				.medium #{medium} 
+					each role in roles
+						span - #{role}
+				.description !{description}
+				.awards 
+					each award in awards
+						- var awardClass = "award " + award
+						div(class=awardClass)
+		
+				.producers
+					h4 Produced by
+					ul
+						each producer in producers
+							li #{producer}
+		
+		
+		include _footer
+	script 
+		include ../js/kbux.js
