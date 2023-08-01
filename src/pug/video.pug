@@ -22,9 +22,12 @@ html.video-page(lang="en")
 							| See the code 
 						.fa.fa-external-link
 				.medium #{medium} 
-					each role in roles
-						span - #{role}
+				
 				.description #{description}
+				-if (roles.length > 0)
+					.roles 
+						h4 Roles&nbsp;
+						div #{roles.join(" - ")}
 				.awards 
 					each award in awards
 						div(class="awards "+ award)

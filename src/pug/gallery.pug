@@ -25,9 +25,13 @@ html(lang="en")
 					a(href="https://codepen.io").external-link
 						.fa.fa-external-link
 				.medium #{medium} 
-					each role in roles
-						span - #{role} 
+				
 				.description !{description}
+				
+				-if (roles.length > 0)
+					.roles 
+						h4 Roles&nbsp;
+						p #{roles.join(" - ")}
 				.awards
 		
 		
