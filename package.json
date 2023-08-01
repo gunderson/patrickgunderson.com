@@ -1,6 +1,6 @@
 {
 	"name": "patrickgunderson.com",
-	"version": "1.6.13",
+	"version": "1.6.14",
 	"description": "Sample Website",
 	"scripts": {
 		"start": "node --inspect src/js/server.js",
