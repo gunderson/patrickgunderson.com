@@ -1709,7 +1709,7 @@
 			],
 			"description": "<p>IBM’s U.S. Open Sessions was an experimental project that addresses that simple question: can you make music from tennis data? ?<p>IBM tracks all the data at the US Open, and we partnered with James Murphy (of LCD Soundsystem fame) to turn it into music. We created a custom-built algorithm to turn data points from more than 400 hours of tennis play into music cues, like pitch and tempo, that produced real-time soundtracks for each match. TRANSLATION: 187 different pieces of music wrote themselves in real time, as the matches happened.",
 			"tags": ["client-work","generative","music", "video"],
-			"roles": ["Creative Director", "Generative Composer"],
+			"roles": ["Creative Director", "Technical Director", "Software Engineer"],
 			"producers": ["IBM", "Ogilvy & Mather", "Tool of NA", "Plan8"],
 			"awards": ["cannes-lion", "d-and-ad", "one-show", "creative-sandbox", "fwa", "adobe", "london-international", "mashie", "omma", "awwward"],
 			"background_color": "#000"
@@ -1728,7 +1728,7 @@
 			"external_url": "",
 			"description": "<p>To commmemorate the 30th annaversary of Macintosh, Apple, MAL and Tool filmed a series of testimonials and built a museum of a website to chronical the path of Mac to that point.</p><p>In addition to the various artists who reminisced about their own first Mac, users were given the oppportunity to share their own first-mac experiences, which were displayed on bespoke data visualizations.</p>",
 			"tags": ["client-work","dataviz","video"],
-			"roles": ["Technical Director"],
+			"roles": ["Technical Director", "Software Engineer"],
 			"producers": ["Apple", "MAL", "Tool of NA"],
 			"awards": ["webby", "one-show"],
 			"background_color": "#000"
@@ -1766,7 +1766,7 @@
 			"external_url": "https://www.youtube.com/watch?v=3p6dirnuQbA",
 			"description": "The Passion Genome creates a personalized Passion Portrait that serves both as an interactive infographic and a piece of unique art that is driven by the essence of the user.",
 			"tags": ["generative", "portrait", "interactive", "social", "web", "client-work"],
-			"roles": ["Creative Director", "Portrait Programmer"],
+			"roles": ["Creative Director", "Software Engineer"],
 			"producers": ["Nissan", "TBWA\\Chiat\\Day", "Tool of NA", "Plan8"],
 			"awards": ["fwa", "adobe", "awwward"],
 			"background_color": "#fff"
@@ -1785,7 +1785,7 @@
 			"external_url": "https://vimeo.com/61721681",
 			"description": "<p>The Beauty Inside is the story of a guy named Alex who wakes up every day as a different person. He is always the same person on the inside but on the outside he is somebody else. When he meets Leah and falls in love everything changes for him. He knows he will see her again but she will never see him.</p><P>An ‘interactive social film’ with a story that unfolded on the film’s Facebook timeline in six episodes, starring Mary Elizabeth Winstead, Topher Grace and several fans who auditioned for a lead role on Facebook.</p>",
 			"tags": ["client-work","social", "video","film", "social"],
-			"roles": ["Creative Developer"],
+			"roles": ["Software Engineer"],
 			"awards": ["emmy", "cannes-lion", "webby", "clio", "d-and-ad", "one-show", "awwward"],
 			"producers": ["Intel", "Toshiba", "B-Reel", "Pereira O'Dell"],
 			"background_color": "#000"
@@ -1804,7 +1804,7 @@
 			"external_url": "https://youtube.com/watch?v=EMeErT97_Vo",
 			"description": "The new 2016 Domino’s DXP is the ultimate pizza delivery vehicle. Follow the purpose-built car along its delivery route and explore its unique features, including an on-board warming oven.",
 			"tags": ["client-work","web"],
-			"roles": ["Creative Director, Technical Director"],
+			"roles": ["Creative Director", "Technical Director", "Software Engineer"],
 			"awards": [],
 			"producers": ["Domino's", "CP+B", "Tool of NA"],
 			"background_color": "#000"
@@ -1842,7 +1842,7 @@
 			"external_url": "https://youtu.be/GNNcyalmCN8",
 			"description": "Assemble the Avengers team by unlocking and testing Avenger-inspired technology to outfit your Acura vehicle and advance in S.H.I.E.L.D. agent rank using your mobile device as your game controller.",
 			"tags": ["client-work","social", "website", "film"],
-			"roles": ["Senior Developer"],
+			"roles": ["Software Engineer"],
 			"awards": ["fwa"],
 			"producers": ["Acura", "Disney", "Marvel", "B-reel"],
 			"background_color": "#000"
@@ -1880,7 +1880,7 @@
 			"external_url": "https://vimeo.com/64865152",
 			"description": "<p>Talking polar bears, pseudo-celebrities, dancing babies and supermodels! The Super Bowl is the biggest game with the best ads. The goal for AdBlitz 2013 was to create a one-stop destination during-and-after-the-game for users alike to watch, vote and share their favorite ads.</p><p>YouTube created a completely new brand identity for its biggest sponsorship program. Filled with social commentary, fun facts, interactive widgets and of course, the Super Bowl ads themselves! The team also produced a second-screen experience specifically for mobile users during the game, an online promotional video about the campaign to signal when voting started.</p>",
 			"tags": ["client-work","social", "video", "superbowl"],
-			"roles": ["Creative Developer"],
+			"roles": ["Software Engineer"],
 			"awards": [],
 			"producers": ["Youtube", "B-Reel", "Google Zoo"],
 			"background_color": "#000"
